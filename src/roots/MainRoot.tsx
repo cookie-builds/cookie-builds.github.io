@@ -56,7 +56,7 @@ const MainRoot = () => {
     '--white': '#FFFFFF',
     '--gray': '#CACACA',
     '--light-green': '#E9F5EA',
-    '--light-green-transparent': '#E9F5EAAA',
+    '--light-green-transparent': '#E9F5EADD',
     '--green': '#217226',
     '--g-btn': '#33A552',
     '--b-btn': '#4080ED',
