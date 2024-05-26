@@ -5,13 +5,13 @@ import styled from 'styled-components';
 import { mediaQuery } from '../../assets/styling';
 
 
-const IconButton = styled.button`
+const IconButton = styled.button<{$opened: number}>`
   background-color: transparent;
   border: none;
   cursor: pointer;
   height: 4rem;
   width: 4rem;
-  color: inherit;
+  color: var(${p => p.$opened ? '--green' : '--white'});
   ${mediaQuery.small`
     display: none;
   `}
@@ -19,7 +19,7 @@ const IconButton = styled.button`
 
 const MobileNav = (props : { openNav: boolean, setOpenNav: React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
-    <IconButton onClick={() => props.setOpenNav(!props.openNav)}>
+    <IconButton onClick={() => props.setOpenNav(!props.openNav)} $opened={+(props.openNav)}>
       {props.openNav ? <MdClose size='2.5rem' /> : <RxHamburgerMenu size='2.5rem' />}
     </IconButton>
   );
