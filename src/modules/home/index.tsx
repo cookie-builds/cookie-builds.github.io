@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LandingPic from '../../assets/landing-pic.jpg';
+import LandingPic from '/assets/images/landing-pic.jpg';
 import Schild from '../../components/schild';
 import Welcome from "./welcome";
 import NextEvent from "./nextEvent";

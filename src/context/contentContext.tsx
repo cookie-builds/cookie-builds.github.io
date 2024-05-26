@@ -37,7 +37,7 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
   const [loading, setLoading] = React.useState<boolean>(true);
 
   const initEvents = React.useCallback(async () => {
-    const response = await fetch(`/assets/events.json`);
+    const response = await fetch(`/assets/data/events.json`);
     const data: EventType[] = await response.json();
 
     for (const e of data) {
