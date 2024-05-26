@@ -6,7 +6,7 @@ import styled from "styled-components";
 const SMDiv = styled.div`
   position: fixed;
   bottom: 0.5rem;
-  left: 0.5rem;
+  right: 0.5rem;
   z-index: 100;
   display: flex;
   flex-direction: column;
