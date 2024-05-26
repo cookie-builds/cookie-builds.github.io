@@ -7,7 +7,6 @@ import Praesidium from './modules/praesidium';
 import Evenementen from './modules/evenementen';
 
 function App() {
-// Test
   const router = createBrowserRouter([
     {
       path: '',
@@ -44,7 +43,6 @@ function App() {
       ],
     }
   ]);
-  console.log('Test push')
   return (
     <ContentProvider>
       <RouterProvider router={router} />

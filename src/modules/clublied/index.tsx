@@ -25,6 +25,7 @@ const IFrameDiv = styled.div`
   position: relative;
   border: none;
   height: 20rem;
+  background-color: black;
   ${mediaQuery.small`
     height: unset;
     flex: 1 1 0;

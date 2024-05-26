@@ -1,32 +1,8 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import dayjs from "dayjs";
-import React from "react"
-
-type EventType = {
-  imageUrl: string,
-  title: string,
-  tldr?: string,
-  what: string,
-  when: string,
-  where: string,
-  who: string,
-  price: string,
-  facebookUrl?: string,
-  registerUrl?: string,
-  picturesUrl?: string,
-  mapsUrl: string,
-  orderDate: string,
-  url: string,
-}
-
-type Content = {
-  events: EventType[];
-  nextEvent: EventType | undefined;
-  pastEvents: EventType[];
-  futureEvents: EventType[];
-  loading: boolean;
-}
+import React from "react";
+import { Content, EventType, PraesidiumMember, ProPraesidium } from "./models";
 
 export const ContentContext = React.createContext<Content>({} as Content);
 
@@ -34,41 +10,44 @@ export const useContent = () => React.useContext(ContentContext);
 
 export const ContentProvider = ({children}: { children: React.ReactNode}) => {
   const [events, setEvents] = React.useState<EventType[]>([]);
+  const [praesidium, setPraesidium] = React.useState<PraesidiumMember[]>([]);
+  const [proPraesidia, setProPraesidia] = React.useState<ProPraesidium[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
+
+  const initPraesidium = React.useCallback(async () => {
+    const response = await fetch(`/assets/data/praesidium.json`);
+    const data: PraesidiumMember[] = await response.json();
+    setPraesidium(data);
+  }, []);
+
+  const initProPraesidia = React.useCallback(async () => {
+    const response = await fetch(`/assets/data/propraesidia.json`);
+    const data: ProPraesidium[] = await response.json();
+    setProPraesidia(data);
+  }, []);
 
   const initEvents = React.useCallback(async () => {
     const response = await fetch(`/assets/data/events.json`);
     const data: EventType[] = await response.json();
-
-    for (const e of data) {
-      if (
-        !e.title ||
-        !e.what ||
-        !e.when ||
-        !e.where ||
-        !e.who ||
-        !e.price ||
-        !e.mapsUrl ||
-        !e.orderDate ||
-        !e.url ||
-        !/\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(e.orderDate) ||
-        !/[^\s]*-\d{4}/.test(e.url)
-      ) {
-        console.error(`Error in event with title '${e.title}'`);
-        throw new Error();
-      }
-    }
     setEvents(data.sort((v1, v2) => v1.orderDate.localeCompare(v2.orderDate)));
-    setLoading(false);
   }, [])
+
+  const init = React.useCallback(async () => {
+    await Promise.all([
+      initEvents(),
+      initPraesidium(),
+      initProPraesidia(),
+    ]);
+    setLoading(false);
+  }, [initEvents, initPraesidium, initProPraesidia])
 
   React.useEffect(() => {
     try {
-      initEvents();
+      init();
     } catch (error) {
       window.alert(`There is an error loading content: ${error}`)
     }
-  }, [initEvents, loading]);
+  }, [init]);
 
   const value = React.useMemo(() => {
     const now = dayjs().format('YYYY-MM-DD HH:mm');
@@ -78,9 +57,11 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
       nextEvent: futureEvents[0],
       pastEvents: events.filter((v) => v.orderDate < now),
       futureEvents,
+      praesidium,
+      proPraesidia,
       loading,
     };
-  }, [events, loading])
+  }, [events, loading, praesidium, proPraesidia])
 
   return (
     <ContentContext.Provider value={value}>

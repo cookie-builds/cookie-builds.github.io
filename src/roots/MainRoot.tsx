@@ -54,7 +54,7 @@ const MainRoot = () => {
   const cssVariables = {
     '--black': '#000000',
     '--white': '#FFFFFF',
-    '--gray': '#CACACA',
+    '--gray': '#EEEEEE',
     '--light-green': '#E9F5EA',
     '--light-green-transparent': '#E9F5EADD',
     '--green': '#217226',
