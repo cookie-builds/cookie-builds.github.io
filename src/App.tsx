@@ -44,7 +44,7 @@ function App() {
       ],
     }
   ]);
-
+  console.log('Test push')
   return (
     <ContentProvider>
       <RouterProvider router={router} />
