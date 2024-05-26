@@ -120,7 +120,11 @@
         "a": ""
       }
     ],
-    "funFacts": []
+    "funFacts": [
+      "Fun fact 1",
+      "Fun fact 2",
+      "Fun fact 3"
+    ]
   },
   {
     "fName": "Kiran",
@@ -181,7 +185,7 @@
       },
       {
         "q": "favoriete drank",
-        "a": "favoriete drank"
+        "a": "Duvel"
       },
       {
         "q": "Zwakte",

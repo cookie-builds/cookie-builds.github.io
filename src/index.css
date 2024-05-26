@@ -9,10 +9,13 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Prompt;
-  scroll-behavior: smooth;
 }
 
 button {

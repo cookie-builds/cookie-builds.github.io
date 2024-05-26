@@ -39,6 +39,13 @@ const NavMenu = () => {
   const { pathname } = useLocation();
 
   React.useEffect(() => setOpenNav(false), [pathname])
+
+  React.useEffect(() => {
+    if (openNav)
+      document.body.style.overflow = 'hidden';
+    else
+      document.body.style.overflow = '';
+  }, [openNav]);
   return (
     <>
       <SHeader $isHome={+(pathname === '/')}>

@@ -57,11 +57,11 @@ export const Tr = styled.tr`
 `;
 
 export const SelectedYear = styled.div<{$open: number}>`
-  height: min-content;
+  display:  ${p => p.$open ? 'block' : 'none'};
   background-color: white;
-  flex: ${p => p.$open ? '1 1 0' : '0'};
+  flex: ${p => p.$open ? '1 1 0' : 'none'};
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  padding: ${p => p.$open ? '1rem' : '0'};
+  padding: 1rem;
 `;
 
 export const MemberDiv = styled(Link)`

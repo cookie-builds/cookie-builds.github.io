@@ -8,9 +8,9 @@ const ProPraesidia = () => {
   const [selectedYear, setSelectedYear] = React.useState<ProPraesidium | undefined>(undefined);
 
   const select = React.useCallback(async (v: ProPraesidium) => {
-    setSelectedYear(v);
-    document.getElementById('selected-year')?.scrollIntoView();
-  }, [])
+    setSelectedYear(v === selectedYear ? undefined : v);
+    setTimeout(() => document.getElementById('selected-year')?.scrollIntoView(), 200)
+  }, [selectedYear])
 
   return (
     <ProPraesidiaDiv>
