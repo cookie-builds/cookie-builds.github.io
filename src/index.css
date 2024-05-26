@@ -12,6 +12,7 @@ img {
 body {
   margin: 0;
   font-family: Prompt;
+  scroll-behavior: smooth;
 }
 
 button {

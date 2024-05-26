@@ -39,7 +39,7 @@ const MText = styled.p`
 
 const Event = (props: EventType) => {
   return (
-    <EventDiv to={`/eventementen/${props.url}`}>
+    <EventDiv to={`/evenementen/${props.url}`}>
       <ImgDiv>
         <Img src={props.imageUrl} />
       </ImgDiv>

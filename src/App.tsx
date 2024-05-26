@@ -5,6 +5,7 @@ import { ContentProvider } from './context/contentContext';
 import Clublied from './modules/clublied';
 import Praesidium from './modules/praesidium';
 import Evenementen from './modules/evenementen';
+import EvenementDetail from './modules/evenementDetail';
 
 function App() {
   const router = createBrowserRouter([
@@ -34,7 +35,16 @@ function App() {
         },
         {
           path: 'evenementen',
-          element: <Evenementen/>
+          children: [
+            {
+              path: '',
+              element: <Evenementen/>,
+            },
+            {
+              path: ':eventUrl',
+              element: <EvenementDetail/>,
+            },
+          ]
         },
         {
           path: 'doop',

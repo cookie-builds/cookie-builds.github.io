@@ -19,7 +19,6 @@ const SHeader = styled(OuterSec)<{ $isHome: number}>`
   padding: 1rem;
   box-shadow: ${p => p.$isHome ? 'none' : '0px 4px 4px 0px rgba(0,0,0,0.2)'};
   z-index: 10000;
-  letter-spacing: 1px;
   transition: 0.2 ease;
 `;
 

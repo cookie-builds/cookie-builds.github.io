@@ -16,15 +16,17 @@ export type EventType = {
 }
 
 export type PraesidiumMember = {
-  imageUrl: string,
   fName: string,
   lName: string,
   nName?: string,
   function: string,
+  imageUrl: string,
+  url: string,
   questions: {
     q: string,
     a: string,
   }[],
+  funFacts: string[],
 }
 
 export type ProPraesidium = {

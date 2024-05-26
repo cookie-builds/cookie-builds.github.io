@@ -42,6 +42,10 @@ const Btn = styled(Link)`
   width: fit-content;
   padding: 0.5rem 1rem;
   font-weight: 500;
+
+  &:hover {
+    transform: scale(1.0125);
+  }
 `;
 
 const NextEvent = () => {

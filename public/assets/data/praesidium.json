@@ -4,26 +4,30 @@
     "lName": "De Cremer",
     "nName": "Cremer",
     "function": "Praeses",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/cremer.jpg",
+    "url": "praeses",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Gerben",
     "lName": "De Wetter",
     "nName": "Marcelleke",
     "function": "Vice-Praeses",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/gerben.jpg",
+    "url": "vice-praeses",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Ruth",
@@ -31,25 +35,33 @@
     "nName": "Koeke",
     "function": "Ab-Actis",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "ab-actis",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Brenda",
     "lName": "Van Gaver",
     "nName": "Brentd",
     "function": "Cantor",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/brenda-2.jpeg",
+    "url": "cantor",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Verpleegkunde"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2023-2024"
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Gohan",
@@ -57,50 +69,58 @@
     "nName": "Juan",
     "function": "Quaestor",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "quaestor",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Goten",
     "lName": "Anné",
     "function": "Sport & Cultuur",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "sport-en-cultuur",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Jason",
     "lName": "Rawnsley",
     "nName": "Gazon",
     "function": "Zedenmeester",
+    "url": "zedenmeester-1",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Jonathan",
     "lName": "Couck",
     "nName": "Couckie",
     "function": "Webmaster",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/jonathan.png",
+    "url": "webmaster",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Kiran",
@@ -108,12 +128,14 @@
     "nName": "BrAkKe JoNgEn",
     "function": "Doopmeester",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "doopmeester",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Kylian",
@@ -121,25 +143,52 @@
     "nName": "Peblu",
     "function": "Schachtentemmer",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "schachtentemmer",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Leana",
     "lName": "Sasi Andrade",
-    "nName": "Couckie",
     "function": "Zedenmeesteres",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/leana.jpeg",
+    "url": "zedenmeester-2",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Bachelor Farmaceutische en biomedische laboratorium technologie (BLT)"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2022-2023"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Wies Rybel"
+      },
+      {
+        "q": "Favoriete cantus liedje",
+        "a": "Die Rietjie / Chevalier de la table Ronde"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "BOOOOOO!!!"
+      },
+      {
+        "q": "favoriete drank",
+        "a": "favoriete drank"
+      },
+      {
+        "q": "Zwakte",
+        "a": "Cava"
       }
-    ]
+    ],
+    "funFacts": []
   },
   {
     "fName": "Lisanne",
@@ -147,11 +196,13 @@
     "nName": "Nightfall",
     "function": "P.R.",
     "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "url": "pr",
     "questions": [
       {
         "q": "",
         "a": ""
       }
-    ]
+    ],
+    "funFacts": []
   }
 ]

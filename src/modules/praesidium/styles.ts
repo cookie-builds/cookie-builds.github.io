@@ -46,10 +46,7 @@ export const Td = styled.td`
 
 export const Tr = styled.tr`
   cursor: pointer;
-
-  &:nth-child(even) {
-    background-color: var(--white);
-  }
+  background-color: var(--white);
   &:nth-child(even) {
     background-color: var(--gray);
   }
@@ -62,7 +59,6 @@ export const Tr = styled.tr`
 export const SelectedYear = styled.div<{$open: number}>`
   height: min-content;
   background-color: white;
-  width: 0;
   flex: ${p => p.$open ? '1 1 0' : '0'};
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
   padding: ${p => p.$open ? '1rem' : '0'};
@@ -73,6 +69,8 @@ export const MemberDiv = styled(Link)`
   flex-direction: column;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
   transition: 0.2s ease;
+  max-width: 34rem;
+  width: 100%;
 
   &:hover {
     transform: scale(1.0125);
@@ -105,6 +103,7 @@ export const MText = styled.p`
 export const Praesidium = styled.div`
   width: 100%;
   display: grid;
+  justify-items: center;
   gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
 

@@ -22,6 +22,10 @@ const SM = styled.a<{color: string}>`
   align-items: center;
   background-color: ${p => p.color};
   color: var(--white);
+
+  &:hover {
+    transform: scale(1.0125);
+  }
 `;
 
 const SocialMedia = () => {

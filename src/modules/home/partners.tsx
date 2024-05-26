@@ -36,7 +36,7 @@ const PartnersDiv = styled.div`
   display: flex;
   background-color: blue;
   width: calc(18rem * 10);
-  animation: ${scroll} 15s linear infinite;
+  animation: ${scroll} 30s linear infinite;
   display: flex;
 `;
 const Partner = styled.div`
