@@ -26,7 +26,7 @@ export type PraesidiumMember = {
     q: string,
     a: string,
   }[],
-  funFacts: string[],
+  funFacts?: string[],
 }
 
 export type ProPraesidium = {

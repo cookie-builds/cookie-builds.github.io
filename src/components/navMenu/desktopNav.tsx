@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { mediaQuery } from '../../assets/styling';
+import React from 'react';
 
 
 const LinkDiv = styled.div`
@@ -16,6 +17,7 @@ const SLink = styled(Link)<{ $active?: number, $isHome?: number }>`
   position: relative;
   font-weight: ${p => p.$active ? 500 : 300};
   text-align: center;
+  transition: 0.2s ease;
 
   &:hover {
     background-color: ${p => p.$isHome ? '#FFFFFF20' : 'var(--light-green)'};
@@ -30,29 +32,31 @@ const SLink = styled(Link)<{ $active?: number, $isHome?: number }>`
     overflow: hidden;
     visibility: hidden;
   }
-  ${p => p.$active && !p.$isHome && `
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 2px;
-      background-color: var(--green);
-      border-radius: 1px;
-    }
-  `}
+  
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: ${p => (p.$active && !p.$isHome) ? '3px' : '0px'};
+    background-color: var(--green);
+    border-radius: 1px;
+    transition: ${p => p.$isHome ? 'none' : '0.2s ease'};
+  }
 `;
 
 const DesktopNav = () => {
   const { pathname } = useLocation();
+  const isHome = React.useMemo(() => pathname === '/', [pathname]);
+
   return (
     <LinkDiv>
-      <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))} $isHome={+(pathname === '/')}>LAN</SLink>
-      <SLink title='Praesidium' to='/praesidium' $active={+(pathname.includes('/praesidium'))} $isHome={+(pathname === '/')}>Praesidium</SLink>
-      <SLink title='Geschiedenis' to='/geschiedenis' $active={+(pathname.includes('/geschiedenis'))} $isHome={+(pathname === '/')}>Geschiedenis</SLink>
-      <SLink title='Clublied' to='/clublied' $active={+(pathname.includes('/clublied'))} $isHome={+(pathname === '/')}>Clublied</SLink>
-      <SLink title='Evenementen' to='/evenementen' $active={+(pathname.includes('/evenementen'))} $isHome={+(pathname === '/')}>Evenementen</SLink>
+      <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))} $isHome={+isHome}>LAN</SLink>
+      <SLink title='Praesidium' to='/praesidium' $active={+(pathname.includes('/praesidium'))} $isHome={+isHome}>Praesidium</SLink>
+      <SLink title='Geschiedenis' to='/geschiedenis' $active={+(pathname.includes('/geschiedenis'))} $isHome={+isHome}>Geschiedenis</SLink>
+      <SLink title='Clublied' to='/clublied' $active={+(pathname.includes('/clublied'))} $isHome={+isHome}>Clublied</SLink>
+      <SLink title='Evenementen' to='/evenementen' $active={+(pathname.includes('/evenementen'))} $isHome={+isHome}>Evenementen</SLink>
     </LinkDiv>
   );
 };

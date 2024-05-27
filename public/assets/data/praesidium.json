@@ -11,8 +11,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Gerben",
@@ -26,8 +25,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Ruth",
@@ -41,8 +39,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Brenda",
@@ -59,9 +56,16 @@
       {
         "q": "Doopjaar",
         "a": "2023-2024"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Love until your veins can flow like water, your lungs can breathe like a newborn baby and your heart can love you more than anything."
+      },
+      {
+        "q": "Favoriete cantus liedje",
+        "a": "Alouette"
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Gohan",
@@ -75,8 +79,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Goten",
@@ -89,8 +92,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Jason",
@@ -104,8 +106,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Jonathan",
@@ -138,8 +139,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Kylian",
@@ -153,8 +153,7 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Leana",
@@ -191,8 +190,7 @@
         "q": "Zwakte",
         "a": "Cava"
       }
-    ],
-    "funFacts": []
+    ]
   },
   {
     "fName": "Lisanne",
@@ -206,7 +204,6 @@
         "q": "",
         "a": ""
       }
-    ],
-    "funFacts": []
+    ]
   }
 ]

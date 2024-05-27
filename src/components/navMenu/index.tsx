@@ -7,6 +7,7 @@ import MobileNav from './mobileNav';
 import NavModal from './navModal';
 import { InnerDiv, OuterSec } from '../standard';
 import Schild from '../schild';
+import { mediaQuery } from '../../assets/styling';
 
 const SHeader = styled(OuterSec)<{ $isHome: number}>`
   position: static;
@@ -20,6 +21,9 @@ const SHeader = styled(OuterSec)<{ $isHome: number}>`
   box-shadow: ${p => p.$isHome ? 'none' : '0px 4px 4px 0px rgba(0,0,0,0.2)'};
   z-index: 10000;
   transition: 0.2 ease;
+  ${mediaQuery.medium`
+    padding: 1rem 4rem;
+  `};
 `;
 
 const SInnerDiv = styled(InnerDiv)`
@@ -32,6 +36,10 @@ const SInnerDiv = styled(InnerDiv)`
 const SLink = styled(Link)`
   padding: 0;
   height: 80px;
+
+  &:hover {
+    transform: scale(1.0125);
+  }
 `;
 
 const NavMenu = () => {

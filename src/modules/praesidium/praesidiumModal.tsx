@@ -48,26 +48,30 @@ const PraesidiumModal = () => {
   }, [praesidium, searchParams])
   return (
     <ModalDiv $open={+(searchParams.get('functie') === null)}>
-      <InsideDiv>
-        <IoClose onClick={() => setSearchParams('')} style={{ cursor: 'pointer' }} size='2rem' />
-        <div>
-          <Title color='--green' text={member?.function || ''} />
-          <Text>{member?.fName} {member?.nName && <i>"{member?.nName}"</i>} {member?.lName}</Text>
-        </div>
-        <Img src={member?.imageUrl} />
-        {member?.questions.map((v) => (
-          <div key={v.q}>
-            <H3>{v.q}</H3>
-            <p>{v.a}</p>
-          </div>
-        ))}
-        <div>
-          <H3>Fun facts:</H3>
+      {member && (
+        <InsideDiv>
+          <IoClose onClick={() => setSearchParams('')} style={{ cursor: 'pointer' }} size='2rem' />
           <div>
-            {member?.funFacts.map((v) => <p>- {v}</p>)}
+            <Title color='--green' text={member.function || ''} />
+            <Text>{member.fName} {member.nName && <i>"{member.nName}"</i>} {member.lName}</Text>
           </div>
-        </div>
-      </InsideDiv>
+          <Img src={member.imageUrl} />
+          {member.questions.map((v) => (
+            <div key={v.q}>
+              <H3>{v.q}</H3>
+              <p>{v.a}</p>
+            </div>
+          ))}
+          {(member.funFacts && member.funFacts.length > 0) && (
+            <div>
+              <H3>Fun facts:</H3>
+              <div>
+                {member.funFacts.map((v) => <p>- {v}</p>)}
+              </div>
+            </div>
+          )}
+        </InsideDiv>
+      )}
     </ModalDiv>
   )
 }

@@ -12,9 +12,6 @@ const EventsDiv = styled.div`
   ${mediaQuery.extraSmall`
     grid-template-columns: repeat(2, 1fr);
   `}
-  ${mediaQuery.medium`
-    grid-template-columns: repeat(3, 1fr);
-  `}
 `;
 
 const Events = (props: { events: EventType[]}) => {
