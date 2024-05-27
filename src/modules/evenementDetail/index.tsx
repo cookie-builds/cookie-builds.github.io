@@ -18,13 +18,13 @@ const IFrame = styled.iframe`
 `;
 
 const EvenementDetail = () => {
-  const { events } = useContent();
+  const { pastEvents, futureEvents } = useContent();
   const [event, setEvent] = React.useState<EventType | undefined>(undefined);
   const { eventUrl } = useParams();
 
   React.useEffect(() => {
-    setEvent(events.find((v) => v.url === eventUrl))
-  }, [eventUrl, events]);
+    setEvent([...pastEvents, ...futureEvents].find((v) => v.url === eventUrl))
+  }, [eventUrl, pastEvents, futureEvents]);
 
   if (!event) return (<>loading</>)
   return (
@@ -35,7 +35,7 @@ const EvenementDetail = () => {
           <Title color="--green" text={`${event.title} ${event.orderDate < dayjs().format('YYYY-MM-DD HH:mm') ? `(${event.orderDate.slice(0, 4)})` : ''}`} />
           <Details {...event} />
           <Buttons {...event} />
-          <IFrame src={event.mapsUrl} loading="lazy" />
+          {event.mapsUrl && <IFrame src={event.mapsUrl} loading="lazy" />}
         </InnerDiv>
       </OuterSec>
     </div>

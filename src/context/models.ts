@@ -10,7 +10,7 @@ export type EventType = {
   facebookUrl?: string,
   registerUrl?: string,
   picturesUrl?: string,
-  mapsUrl: string,
+  mapsUrl?: string,
   orderDate: string,
   url: string,
 }
@@ -39,11 +39,21 @@ export type ProPraesidium = {
 }
 
 export type Content = {
-  events: EventType[];
-  praesidium: PraesidiumMember[];
-  proPraesidia: ProPraesidium[];
+  // Events
   nextEvent: EventType | undefined;
   pastEvents: EventType[];
   futureEvents: EventType[];
+  filteredEvents: EventType[];
+  filterEvents: (filter: EventFilter) => void;
+  // Praesidium
+  praesidium: PraesidiumMember[];
+  // Propraesidium
+  proPraesidia: ProPraesidium[];
+  // Status
   loading: boolean;
 }
+
+export type EventFilter = {
+  onlyPictures: boolean;
+  search: string;
+};

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { EventType } from '../../context/models'
 import { Link } from 'react-router-dom';
+import { BsImages } from 'react-icons/bs';
 
 const EventDiv = styled(Link)`
   display: flex;
@@ -15,7 +16,9 @@ const EventDiv = styled(Link)`
 `;
 
 const ImgDiv = styled.div`
+  position: relative;
   width: 100%;
+  flex: 1 1 0;
 `;
 const Img = styled.img`
   width: 100%;
@@ -36,11 +39,23 @@ const MText = styled.p`
   font-size: 1rem;
   font-weight: 300;
 `;
+const SBsImages = styled(BsImages)`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--white);
+  padding: 0.25rem;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  border-radius: 0.25rem;
+  color: var(--green);
+  cursor: pointer;
+`;
 
 const Event = (props: EventType) => {
   return (
     <EventDiv to={`/evenementen/${props.url}`}>
       <ImgDiv>
+        {props.picturesUrl && <SBsImages size='2.5rem' />}
         <Img src={props.imageUrl} />
       </ImgDiv>
       <TextDiv>

@@ -14,9 +14,14 @@ const EventsDiv = styled.div`
   `}
 `;
 
-const Events = (props: { events: EventType[]}) => {
+const P = styled.p<{$color: string}>`
+  color: var(${p => p.$color});
+  font-weight: 300;
+`;
+
+const Events = (props: { events: EventType[], noEventsColor: string }) => {
   if (props.events.length === 0) return (
-    <p style={{ color: 'var(--white)', fontWeight: '300' }}>Geen evenementen gepland</p>
+    <P $color={props.noEventsColor}>Geen evenementen met deze filters</P>
   )
 
   return (

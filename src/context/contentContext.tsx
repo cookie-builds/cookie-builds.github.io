@@ -1,15 +1,18 @@
 /* eslint-disable react-refresh/only-export-components */
+import dayjs from 'dayjs';
+import React from 'react';
+import { Content, EventFilter, EventType, PraesidiumMember, ProPraesidium } from './models';
 
-import dayjs from "dayjs";
-import React from "react";
-import { Content, EventType, PraesidiumMember, ProPraesidium } from "./models";
+const BASE_IMAGE = 'https://imgur.com/NhrMwiG.png'
 
 export const ContentContext = React.createContext<Content>({} as Content);
 
 export const useContent = () => React.useContext(ContentContext);
 
 export const ContentProvider = ({children}: { children: React.ReactNode}) => {
-  const [events, setEvents] = React.useState<EventType[]>([]);
+  const [futureEvents, setFutureEvents] = React.useState<EventType[]>([]);
+  const [pastEvents, setPastEvents] = React.useState<EventType[]>([]);
+  const [filteredEvents, setFilteredEvents] = React.useState<EventType[]>([]);
   const [praesidium, setPraesidium] = React.useState<PraesidiumMember[]>([]);
   const [proPraesidia, setProPraesidia] = React.useState<ProPraesidium[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
@@ -27,10 +30,29 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
   }, []);
 
   const initEvents = React.useCallback(async () => {
-    const response = await fetch(`/assets/data/events.json`);
-    const data: EventType[] = await response.json();
-    setEvents(data.sort((v1, v2) => v1.orderDate.localeCompare(v2.orderDate)));
+    const [dataEvents, dataArchive] = await Promise.all(['/assets/data/events.json', '/assets/data/archiveEvents.json'].map(async (v): Promise<EventType[]> => {
+      const resp = await fetch(v);
+      return resp.json();
+    }))
+    const now = dayjs().format('YYYY-MM-DD HH:mm');
+    const events = [...dataEvents, ...dataArchive]
+      .map(v => ({ ...v, imageUrl: v.imageUrl || BASE_IMAGE }))
+      .sort((v1, v2) => v1.orderDate.localeCompare(v2.orderDate));
+    const fe = events.filter((v) => v.orderDate >= now)
+    const pe = events.filter((v) => v.orderDate < now)
+    setFutureEvents(fe);
+    setPastEvents(pe);
   }, [])
+
+  const filterEvents = React.useCallback(async (filter: EventFilter) => {
+    setFilteredEvents(pastEvents.filter(v => {
+      if (filter.onlyPictures && !v.picturesUrl)
+        return false;
+      if (filter.search !== '')
+        return v.title.toLowerCase().includes(filter.search);
+      return true;
+    }))
+  }, [pastEvents]);
 
   const init = React.useCallback(async () => {
     await Promise.all([
@@ -49,19 +71,16 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     }
   }, [init]);
 
-  const value = React.useMemo(() => {
-    const now = dayjs().format('YYYY-MM-DD HH:mm');
-    const futureEvents = events.filter((v) => v.orderDate > now);
-    return {
-      events,
-      nextEvent: futureEvents[0],
-      pastEvents: events.filter((v) => v.orderDate < now),
-      futureEvents,
-      praesidium,
-      proPraesidia,
-      loading,
-    };
-  }, [events, loading, praesidium, proPraesidia])
+  const value = React.useMemo(() => ({
+    futureEvents,
+    pastEvents,
+    nextEvent: futureEvents[0],
+    filteredEvents,
+    praesidium,
+    proPraesidia,
+    loading,
+    filterEvents,
+  }), [futureEvents, pastEvents, filteredEvents, filterEvents, loading, praesidium, proPraesidia])
 
   return (
     <ContentContext.Provider value={value}>
