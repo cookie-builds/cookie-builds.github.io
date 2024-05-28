@@ -66,8 +66,15 @@ export type EventFilter = {
   search: string;
 };
 
+export type TimelineJson = {
+  date: string;
+  text: string;
+  link?: string;
+}
+
 export type TimelinePart = {
-  date: string,
-  text: string,
-  link?: string,
+  title: string;
+  cardTitle: string;
+  cardDetailedText: string;
+  url?: string;
 }

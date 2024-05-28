@@ -32,11 +32,14 @@
 }
 
 .TimelineItemContentWrapper-sc-d7qjm1-0 {
+  border: none !important;
   margin: 0 !important;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2) !important;
 }
 
 .TimelineContentContainer-sc-18iuiou-5 {
   max-width: 80rem;
+  width: 100%;
   margin: 0 !important;
 }
 
@@ -48,4 +51,19 @@
 .Shape-sc-18iuiou-3 {
   height: 24px !important;
   width: 24px !important;
+}
+
+.CardTitle-sc-d7qjm1-3 > a {
+  position: relative;
+}
+
+.CardTitle-sc-d7qjm1-3 > a::after {
+  content: '►';
+  position: absolute;
+  right: -1rem;
+  padding-left: 4rem;
+  top: 0;
+  display: flex;
+  width: 3rem;
+  height: 1rem;
 }

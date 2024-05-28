@@ -17,7 +17,7 @@ const Geschiedenis = () => {
     <div>
       <Banner imgUrl={BannerImg} />
       <Emergence />
-      <Timeline />
+      {initialized.timeline && <Timeline />}
       <div style={{ marginBottom: '30rem' }} />
     </div>
   )

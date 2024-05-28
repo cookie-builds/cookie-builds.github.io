@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import dayjs from 'dayjs';
 import React from 'react';
-import { Content, EventType, PraesidiumMember, ProPraesidium, TimelinePart } from './models';
+import { Content, EventType, PraesidiumMember, ProPraesidium, TimelineJson, TimelinePart } from './models';
 
 const BASE_IMAGE = 'https://imgur.com/NhrMwiG.png'
 
@@ -63,8 +63,14 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     setLoading(true);
     
     const response = await fetch(`/assets/data/timeline.json`);
-    const data: TimelinePart[] = await response.json();
-    setTimeline(data);
+    const data: TimelineJson[] = await response.json();
+    console.log(data);
+    setTimeline(data.map((v) => ({
+      title: v.date,
+      cardTitle: v.date,
+      cardDetailedText: v.text,
+      url: v.link,
+    })));
 
     setInitialized({
       ...initialized,
