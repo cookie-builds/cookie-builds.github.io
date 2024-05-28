@@ -49,6 +49,8 @@ export type Content = {
   praesidium: PraesidiumMember[];
   // Propraesidium
   proPraesidia: ProPraesidium[];
+  // Timeline
+  timeline: TimelinePart[];
   // Status
   loading: boolean;
 }
@@ -57,3 +59,9 @@ export type EventFilter = {
   onlyPictures: boolean;
   search: string;
 };
+
+export type TimelinePart = {
+  date: string,
+  text: string,
+  link?: string,
+}

@@ -1,11 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './modules/home';
 import MainRoot from './roots/MainRoot';
 import { ContentProvider } from './context/contentContext';
-import Clublied from './modules/clublied';
-import Praesidium from './modules/praesidium';
-import Evenementen from './modules/evenementen';
-import EvenementDetail from './modules/evenementDetail';
+import Elements from './modules';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +11,7 @@ function App() {
       children: [
         {
           path: '',
-          element: <Home />
+          element: <Elements.Home />
         },
         {
           path: 'lan',
@@ -23,26 +19,26 @@ function App() {
         },
         {
           path: 'praesidium',
-          element: <Praesidium/>
+          element: <Elements.Praesidium/>
         },
         {
           path: 'geschiedenis',
-          element: <></>
+          element: <Elements.Geschiedenis/>
         },
         {
           path: 'clublied',
-          element: <Clublied />
+          element: <Elements.Clublied />
         },
         {
           path: 'evenementen',
           children: [
             {
               path: '',
-              element: <Evenementen/>,
+              element: <Elements.Evenementen/>,
             },
             {
               path: ':eventUrl',
-              element: <EvenementDetail/>,
+              element: <Elements.EvenementDetail/>,
             },
           ]
         },

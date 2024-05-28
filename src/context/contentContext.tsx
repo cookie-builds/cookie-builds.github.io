@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import dayjs from 'dayjs';
 import React from 'react';
-import { Content, EventFilter, EventType, PraesidiumMember, ProPraesidium } from './models';
+import { Content, EventFilter, EventType, PraesidiumMember, ProPraesidium, TimelinePart } from './models';
 
 const BASE_IMAGE = 'https://imgur.com/NhrMwiG.png'
 
@@ -15,18 +15,22 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
   const [filteredEvents, setFilteredEvents] = React.useState<EventType[]>([]);
   const [praesidium, setPraesidium] = React.useState<PraesidiumMember[]>([]);
   const [proPraesidia, setProPraesidia] = React.useState<ProPraesidium[]>([]);
+  const [timeline, setTimeline] = React.useState<TimelinePart[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
 
   const initPraesidium = React.useCallback(async () => {
-    const response = await fetch(`/assets/data/praesidium.json`);
-    const data: PraesidiumMember[] = await response.json();
-    setPraesidium(data);
-  }, []);
-
-  const initProPraesidia = React.useCallback(async () => {
-    const response = await fetch(`/assets/data/propraesidia.json`);
-    const data: ProPraesidium[] = await response.json();
-    setProPraesidia(data);
+    await Promise.all([
+      async () => {
+        const response = await fetch(`/assets/data/praesidium.json`);
+        const data: PraesidiumMember[] = await response.json();
+        setPraesidium(data);
+      },
+      async () => {
+        const response = await fetch(`/assets/data/propraesidia.json`);
+        const data: ProPraesidium[] = await response.json();
+        setProPraesidia(data);
+      }
+    ])
   }, []);
 
   const initEvents = React.useCallback(async () => {
@@ -42,7 +46,13 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     const pe = events.filter((v) => v.orderDate < now)
     setFutureEvents(fe);
     setPastEvents(pe);
-  }, [])
+  }, []);
+
+  const initTimeline = React.useCallback(async () => {
+    const response = await fetch(`/assets/data/timeline.json`);
+    const data: TimelinePart[] = await response.json();
+    setTimeline(data);
+  }, []);
 
   const filterEvents = React.useCallback(async (filter: EventFilter) => {
     setFilteredEvents(pastEvents.filter(v => {
@@ -58,10 +68,10 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     await Promise.all([
       initEvents(),
       initPraesidium(),
-      initProPraesidia(),
+      initTimeline(),
     ]);
     setLoading(false);
-  }, [initEvents, initPraesidium, initProPraesidia])
+  }, [initEvents, initPraesidium, initTimeline])
 
   React.useEffect(() => {
     try {
@@ -78,9 +88,10 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     filteredEvents,
     praesidium,
     proPraesidia,
+    timeline,
     loading,
     filterEvents,
-  }), [futureEvents, pastEvents, filteredEvents, filterEvents, loading, praesidium, proPraesidia])
+  }), [futureEvents, pastEvents, filteredEvents, filterEvents, loading, praesidium, proPraesidia, timeline])
 
   return (
     <ContentContext.Provider value={value}>
