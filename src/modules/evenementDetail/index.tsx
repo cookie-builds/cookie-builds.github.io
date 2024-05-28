@@ -18,9 +18,14 @@ const IFrame = styled.iframe`
 `;
 
 const EvenementDetail = () => {
-  const { pastEvents, futureEvents } = useContent();
+  const { initialized, initEvents, pastEvents, futureEvents } = useContent();
   const [event, setEvent] = React.useState<EventType | undefined>(undefined);
   const { eventUrl } = useParams();
+
+  React.useEffect(() => {
+    if (!initialized.events)
+      initEvents();
+  }, [initialized.events, initEvents]);
 
   React.useEffect(() => {
     setEvent([...pastEvents, ...futureEvents].find((v) => v.url === eventUrl))

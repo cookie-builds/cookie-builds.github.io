@@ -68,14 +68,19 @@ const Check = styled.input`
 `;
 
 const Evenementen = () => {
-  const { futureEvents, pastEvents } = useContent();
+  const { futureEvents, pastEvents, initialized, initEvents } = useContent();
   const [filteredEvents, setFilteredEvents] = React.useState<EventType[]>([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = React.useState(true);
   const [filter, setFilter] = React.useState<EventFilter>({
     onlyPictures: searchParams.get('only-pictures') === '1',
     search: searchParams.get('search') || '',
-  })
+  });
+
+  React.useEffect(() => {
+    if (!initialized.events)
+      initEvents();
+  }, [initialized.events, initEvents]);
 
   const onChangeS = React.useCallback((newVal: string) => setFilter({ onlyPictures: filter.onlyPictures, search: newVal}), [filter.onlyPictures])
   const onChangeOP = React.useCallback((newVal: boolean) => setFilter({ onlyPictures: newVal, search: filter.search}), [filter.search]);

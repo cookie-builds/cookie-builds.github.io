@@ -40,19 +40,25 @@ export type ProPraesidium = {
 
 export type Content = {
   // Events
-  nextEvent: EventType | undefined;
-  pastEvents: EventType[];
   futureEvents: EventType[];
-  filteredEvents: EventType[];
-  filterEvents: (filter: EventFilter) => void;
+  pastEvents: EventType[];
+  nextEvent: EventType | undefined;
   // Praesidium
   praesidium: PraesidiumMember[];
-  // Propraesidium
   proPraesidia: ProPraesidium[];
   // Timeline
   timeline: TimelinePart[];
   // Status
   loading: boolean;
+  // Inits
+  initialized: {
+    praesidium: boolean,
+    events: boolean,
+    timeline: boolean,
+  };
+  initPraesidium: () => Promise<void>;
+  initEvents: () => Promise<void>;
+  initTimeline: () => Promise<void>;
 }
 
 export type EventFilter = {
