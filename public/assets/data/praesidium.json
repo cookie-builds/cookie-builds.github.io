@@ -62,7 +62,7 @@
         "a": "Love until your veins can flow like water, your lungs can breathe like a newborn baby and your heart can love you more than anything."
       },
       {
-        "q": "Favoriete cantus liedje",
+        "q": "Favoriete cantuslied",
         "a": "Alouette"
       }
     ]
@@ -117,8 +117,24 @@
     "url": "webmaster",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Dwerg 2 & Kleinen"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "The Wild Rover"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "You are too concerned with what was and what will be. Yesterday is history, tomorrow is a mistery, but today is a gift. That is why it is called the present."
+      },
+      {
+        "q": "Favoriete drank",
+        "a": "Pintjeuh"
       }
     ],
     "funFacts": [
@@ -175,7 +191,7 @@
         "a": "Wies Rybel"
       },
       {
-        "q": "Favoriete cantus liedje",
+        "q": "Favoriete cantuslied",
         "a": "Die Rietjie / Chevalier de la table Ronde"
       },
       {

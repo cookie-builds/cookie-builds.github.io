@@ -1,202 +1,245 @@
 [
   {
-    "year": "2024",
-    "praeses": "Test",
+    "year": "2023-2024",
+    "praeses": "Jarno 'Mona' Simons",
+    "image": "2023-2024.png",
     "members": [
       {
-        "function": "Function",
-        "name": "Name 1"
+        "function": "Vice-Praeses",
+        "name": "Ilke 'Dwerg 2' Kestemont"
       },
       {
-        "function": "Function",
-        "name": "Name 2"
+        "function": "Ab-Actis",
+        "name": "Lorenzo Troch"
       },
       {
-        "function": "Function",
-        "name": "Name 3"
+        "function": "Schachtentemmer",
+        "name": "Kylian Lenoir"
       },
       {
-        "function": "Function",
-        "name": "Name 4"
+        "function": "Feest",
+        "name": "Fleur 'Luna' Schietecat"
       },
       {
-        "function": "Function",
-        "name": "Name 5"
+        "function": "Cantor",
+        "name": "Jarno 'Cremer' De Cremer"
       },
       {
-        "function": "Function",
-        "name": "Name 6"
+        "function": "Quaestor",
+        "name": "Kiran 'BrAkKe' JoNgEn"
       },
       {
-        "function": "Function",
-        "name": "Name 7"
+        "function": "Zedenmeester",
+        "name": "Michiel 'Kleinen' Van Herreweghe"
       },
       {
-        "function": "Function",
-        "name": "Name 8"
+        "function": "P.R.",
+        "name": "Sven 'Duivenmelker' Pepermans"
       },
       {
-        "function": "Function",
-        "name": "Name 9"
-      },
-      {
-        "function": "Function",
-        "name": "Name 10"
-      },
-      {
-        "function": "Function",
-        "name": "Name 11"
+        "function": "Webmaster",
+        "name": "Jonathan 'Couckie' Couck"
       }
     ]
   },
   {
-    "year": "2023",
-    "praeses": "Test",
+    "year": "2022-2023",
+    "praeses": "Fleur 'Luna' Schietecat",
     "members": [
       {
-        "function": "Function",
-        "name": "Name 1"
+        "function": "Vice-Praeses",
+        "name": "Jarno 'Mona' Simons"
       },
       {
-        "function": "Function",
-        "name": "Name 2"
+        "function": "Ab-Actis",
+        "name": "Ruth 'Springduif' De Ridder"
       },
       {
-        "function": "Function",
-        "name": "Name 3"
+        "function": "Quaestor",
+        "name": "Kiran 'BrAkKe' JoNgEn"
       },
       {
-        "function": "Function",
-        "name": "Name 4"
+        "function": "Schachtentemmer",
+        "name": "Michiel 'Kleinen' Van Herreweghe"
       },
       {
-        "function": "Function",
-        "name": "Name 5"
+        "function": "Cantor",
+        "name": "Jarno 'Cremer' De Cremer"
       },
       {
-        "function": "Function",
-        "name": "Name 6"
+        "function": "Sport & Cultuur",
+        "name": "Maaike 'Maajk' Van Den Bossche"
       },
       {
-        "function": "Function",
-        "name": "Name 7"
+        "function": "Zedenmeester",
+        "name": "Ilke 'Dwerg 2' Kestemont"
       },
       {
-        "function": "Function",
-        "name": "Name 8"
-      },
-      {
-        "function": "Function",
-        "name": "Name 9"
-      },
-      {
-        "function": "Function",
-        "name": "Name 10"
-      },
-      {
-        "function": "Function",
-        "name": "Name 11"
+        "function": "Webmaster",
+        "name": "Jonathan 'Couckie' Couck"
       }
     ]
   },
   {
-    "year": "2022",
-    "praeses": "Test",
+    "year": "2021-2022",
+    "praeses": "Sven 'Duivenmelker' Pepermans",
     "members": [
       {
-        "function": "Function",
-        "name": "Name 1"
+        "function": "Vice-Praeses",
+        "name": "Jarno 'Mona' Simons"
       },
       {
-        "function": "Function",
-        "name": "Name 2"
+        "function": "Ab-Actis",
+        "name": "Fleur 'Luna' Schietecat"
       },
       {
-        "function": "Function",
-        "name": "Name 3"
+        "function": "Quaestor",
+        "name": "Michiel 'Kleinen' Van Herreweghe"
       },
       {
-        "function": "Function",
-        "name": "Name 4"
-      },
-      {
-        "function": "Function",
-        "name": "Name 5"
-      },
-      {
-        "function": "Function",
-        "name": "Name 6"
-      },
-      {
-        "function": "Function",
-        "name": "Name 7"
-      },
-      {
-        "function": "Function",
-        "name": "Name 8"
-      },
-      {
-        "function": "Function",
-        "name": "Name 9"
-      },
-      {
-        "function": "Function",
-        "name": "Name 10"
-      },
-      {
-        "function": "Function",
-        "name": "Name 11"
+        "function": "Webmaster",
+        "name": "Thomas 'Sir Caderyn' Struyf"
       }
     ]
   },
   {
-    "year": "2021",
-    "praeses": "Test",
-    "members": [
-      {
-        "function": "Function",
-        "name": "Name 1"
-      },
-      {
-        "function": "Function",
-        "name": "Name 2"
-      },
-      {
-        "function": "Function",
-        "name": "Name 3"
-      },
-      {
-        "function": "Function",
-        "name": "Name 4"
-      },
-      {
-        "function": "Function",
-        "name": "Name 5"
-      },
-      {
-        "function": "Function",
-        "name": "Name 6"
-      },
-      {
-        "function": "Function",
-        "name": "Name 7"
-      },
-      {
-        "function": "Function",
-        "name": "Name 8"
-      },
-      {
-        "function": "Function",
-        "name": "Name 9"
-      },
-      {
-        "function": "Function",
-        "name": "Name 10"
-      },
-      {
-        "function": "Function",
-        "name": "Name 11"
-      }
-    ]
+    "year": "2020-2021",
+    "praeses": "Julie Deboel",
+    "members": []
+  },
+  {
+    "year": "2018-2020",
+    "praeses": "Elien 'Backie' De Backer",
+    "members": []
+  },
+  {
+    "year": "2017-2018",
+    "praeses": "Kristof 'Krissie' van Moorter",
+    "members": []
+  },
+  {
+    "year": "2016-2017",
+    "praeses": "Sander Vonck",
+    "members": []
+  },
+  {
+    "year": "2015-2016",
+    "praeses": "Anke De Spiegeleer",
+    "members": []
+  },
+  {
+    "year": "2014-2015",
+    "praeses": "Ken Roosens",
+    "members": []
+  },
+  {
+    "year": "2013-2014",
+    "praeses": "Brigitte 'B' Bauwens",
+    "members": []
+  },
+  {
+    "year": "2012-2013",
+    "praeses": "Ignace 'Lowie' De Brucker",
+    "members": []
+  },
+  {
+    "year": "2010-2012",
+    "praeses": "Michaël 'Ketten' De Corte",
+    "members": []
+  },
+  {
+    "year": "2009-2010",
+    "praeses": "Sarah 'Facteur' De Mesmaeker",
+    "members": []
+  },
+  {
+    "year": "2008-2009",
+    "praeses": "Kenneth 'Filiep' De Meyer",
+    "members": []
+  },
+  {
+    "year": "2007-2008",
+    "praeses": "Lindsay 'Linsken' Van Den Bremt",
+    "members": []
+  },
+  {
+    "year": "2006-2007",
+    "praeses": "Jonas 'Jones' De Bruyn",
+    "members": []
+  },
+  {
+    "year": "2005-2006",
+    "praeses": "Koen 'Ludo' De Spiegeleir",
+    "members": []
+  },
+  {
+    "year": "2004-2005",
+    "praeses": "Joris 'Jak' De Groot",
+    "members": []
+  },
+  {
+    "year": "2003-2004",
+    "praeses": "Sabrina 'Triplex' Van Hauwe",
+    "members": []
+  },
+  {
+    "year": "2002-2003",
+    "praeses": "Stijn 'Zwerver' De Brucker",
+    "members": []
+  },
+  {
+    "year": "2001-2002",
+    "praeses": "Dimitri 'Pinky' Dubois",
+    "members": []
+  },
+  {
+    "year": "2000-2001",
+    "praeses": "Gwendy 'Tandje' Van Ransbeek",
+    "members": []
+  },
+  {
+    "year": "1999-2000",
+    "praeses": "Frederik 'Fred' Van Hecke",
+    "members": []
+  },
+  {
+    "year": "1998-1999",
+    "praeses": "Kim 'El Lankour' Schollaert",
+    "members": []
+  },
+  {
+    "year": "1997-1998",
+    "praeses": "David 'De Kont' Vermeir",
+    "members": []
+  },
+  {
+    "year": "1995-1997",
+    "praeses": "Pascal 'Scalle' Claessens",
+    "members": []
+  },
+  {
+    "year": "1994-1995",
+    "praeses": "Tony 'Den Bleeken' Mouton",
+    "members": []
+  },
+  {
+    "year": "1993-1994",
+    "praeses": "Geert 'Den Broinen' Bruyneel",
+    "members": []
+  },
+  {
+    "year": "1992-1993",
+    "praeses": "Tom Van Pelt",
+    "members": []
+  },
+  {
+    "year": "1991-1992",
+    "praeses": "Wim 'Badmoesj' Wachtelaer",
+    "members": []
+  },
+  {
+    "year": "1990-1991",
+    "praeses": "Dirk De Munter",
+    "members": []
   }
 ]

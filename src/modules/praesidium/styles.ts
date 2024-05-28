@@ -13,13 +13,14 @@ export const ProPraesidiaDiv = styled.div`
 `;
 
 export const Table = styled.table`
-  flex: 1 1 0;
+  display: block;
   background-color: var(--white);
   width: 100%;
   text-align: left;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
   border-spacing: 0;
-  height: min-content;
+  max-height: 25rem;
+  overflow-y: scroll;
   
   ${mediaQuery.extraSmall`
     max-width: 20rem;
@@ -44,9 +45,10 @@ export const Td = styled.td`
   padding: 0.5rem;
 `;
 
-export const Tr = styled.tr`
+export const Tr = styled.tr<{$selected: number}>`
   cursor: pointer;
   background-color: var(--white);
+  font-weight: ${p => p.$selected ? '500' : '300'};
   &:nth-child(even) {
     background-color: var(--gray);
   }
@@ -62,6 +64,7 @@ export const SelectedYear = styled.div<{$open: number}>`
   flex: ${p => p.$open ? '1 1 0' : 'none'};
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
   padding: 1rem;
+  height: min-content;
 `;
 
 export const MemberDiv = styled(Link)`
@@ -117,4 +120,5 @@ export const Praesidium = styled.div`
 
 export const SYYear = styled.h3`
   margin-bottom: 1.25rem;
+  font-weight: 400;
 `;

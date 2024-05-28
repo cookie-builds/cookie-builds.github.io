@@ -10,6 +10,7 @@ const TimelineDiv = styled.div`
   flex-direction: column;
   align-items: left;
   gap: 1.5rem;
+  padding-bottom: 7.5rem;
 `;
 const SInnerDiv = styled(InnerDiv)`
   padding: 0;

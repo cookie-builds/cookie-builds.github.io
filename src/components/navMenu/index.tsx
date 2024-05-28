@@ -9,7 +9,7 @@ import { InnerDiv, OuterSec } from '../standard';
 import Schild from '../schild';
 import { mediaQuery } from '../../assets/styling';
 
-const SHeader = styled(OuterSec)<{ $isHome: number}>`
+const SHeader = styled(OuterSec)<{ $isHome: number }>`
   position: static;
   top: 2.5rem;
   width: 100%;
@@ -20,7 +20,7 @@ const SHeader = styled(OuterSec)<{ $isHome: number}>`
   padding: 1rem;
   box-shadow: ${p => p.$isHome ? 'none' : '0px 4px 4px 0px rgba(0,0,0,0.2)'};
   z-index: 10000;
-  transition: 0.2 ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
   ${mediaQuery.medium`
     padding: 1rem 4rem;
   `};
