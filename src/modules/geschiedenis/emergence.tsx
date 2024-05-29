@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { InnerDiv, OuterSec } from '../../components/standard';
 import Title from '../../components/title';
+import { boxShadow } from '../../assets/styling';
 
 const P = styled.p`
   width: 100%;
   padding: 1rem;
   background-color: var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
 `;
 
 const Emergence = () => {

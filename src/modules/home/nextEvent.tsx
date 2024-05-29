@@ -3,14 +3,14 @@ import { InnerDiv, OuterSec } from '../../components/standard';
 import Title from '../../components/title';
 import { Link } from 'react-router-dom';
 import { useContent } from '../../context/contentContext';
-import { mediaQuery } from '../../assets/styling';
+import { boxShadow, mediaQuery, transition } from '../../assets/styling';
 
 const Event = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   ${mediaQuery.small`
     flex-direction: row;
   `}
@@ -42,10 +42,7 @@ const Btn = styled(Link)`
   width: fit-content;
   padding: 0.5rem 1rem;
   font-weight: 500;
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${transition}
 `;
 
 const NextEvent = () => {

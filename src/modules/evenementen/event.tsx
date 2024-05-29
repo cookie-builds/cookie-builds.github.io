@@ -2,17 +2,14 @@ import styled from 'styled-components'
 import { EventType } from '../../context/models'
 import { Link } from 'react-router-dom';
 import { BsImages } from 'react-icons/bs';
+import { boxShadow, transition } from '../../assets/styling';
 
 const EventDiv = styled(Link)`
   display: flex;
   flex-direction: column;
   width: 100%;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  transition: 0.2s ease;
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${boxShadow}
+  ${transition}
 `;
 
 const ImgDiv = styled.div`
@@ -45,7 +42,7 @@ const SBsImages = styled(BsImages)`
   right: 1rem;
   background-color: var(--white);
   padding: 0.25rem;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   border-radius: 0.25rem;
   color: var(--green);
   cursor: pointer;

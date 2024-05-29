@@ -3,14 +3,14 @@ import BannerImg from '/assets/images/landing-pic.jpg';
 import { InnerDiv, OuterSec } from "../../components/standard";
 import Title from "../../components/title";
 import styled from "styled-components";
-import { mediaQuery } from "../../assets/styling";
+import { boxShadow, mediaQuery } from "../../assets/styling";
 
 const VideoDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   ${mediaQuery.small`
     flex-direction: row;
   `}

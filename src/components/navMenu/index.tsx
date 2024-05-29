@@ -7,7 +7,7 @@ import MobileNav from './mobileNav';
 import NavModal from './navModal';
 import { InnerDiv, OuterSec } from '../standard';
 import Schild from '../schild';
-import { mediaQuery } from '../../assets/styling';
+import { mediaQuery, transition } from '../../assets/styling';
 
 const SHeader = styled(OuterSec)<{ $isHome: number }>`
   position: static;
@@ -36,10 +36,7 @@ const SInnerDiv = styled(InnerDiv)`
 const SLink = styled(Link)`
   padding: 0;
   height: 80px;
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${transition}
 `;
 
 const NavMenu = () => {

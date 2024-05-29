@@ -8,6 +8,7 @@ import React from "react";
 import { useSearchParams } from "react-router-dom";
 import { EventFilter, EventType } from "../../context/models";
 import Filter from "./filter";
+import Buttons from "./buttons";
 
 const Evenementen = () => {
   const { futureEvents, pastEvents, initialized, initEvents } = useContent();
@@ -68,6 +69,7 @@ const Evenementen = () => {
     if (newPage < 0 || newPage >= Math.ceil(filteredEvents.length / 4))
       return;
     setPage(newPage);
+    setTimeout(() => document.getElementById('previous-events')?.scrollIntoView(), 200)
   }, [filteredEvents.length]);
 
   return (
@@ -87,10 +89,7 @@ const Evenementen = () => {
             <InnerDiv style={{paddingTop: '0'}}>
               <Filter onChangeOP={onChangeOP} onChangeS={onChangeS} filter={filter} />
               <Events events={filteredEvents.slice(page*4, (page+1)*4)} noEventsColor="--black" />
-              <div>
-                <button onClick={() => setCurrPage(page-1)}>Vorige</button>
-                <button onClick={() => setCurrPage(page+1)}>Volgende</button>
-              </div>
+              <Buttons back={() => setCurrPage(page-1)} forward={() => setCurrPage(page+1)} minPage={page === 0} maxPage={page === Math.ceil(filteredEvents.length / 4)-1} />
             </InnerDiv>
           </OuterSec>
         </>

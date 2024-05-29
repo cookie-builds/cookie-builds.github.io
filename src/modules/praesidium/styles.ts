@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQuery } from '../../assets/styling';
+import { boxShadow, mediaQuery, transition } from '../../assets/styling';
 import { Link } from "react-router-dom";
 
 export const ProPraesidiaDiv = styled.div`
@@ -17,7 +17,7 @@ export const Table = styled.table`
   background-color: var(--white);
   width: 100%;
   text-align: left;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   border-spacing: 0;
   max-height: 25rem;
   overflow-y: scroll;
@@ -62,7 +62,7 @@ export const SelectedYear = styled.div<{$open: number}>`
   display:  ${p => p.$open ? 'block' : 'none'};
   background-color: white;
   flex: ${p => p.$open ? '1 1 0' : 'none'};
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   padding: 1rem;
   height: min-content;
 `;
@@ -70,14 +70,10 @@ export const SelectedYear = styled.div<{$open: number}>`
 export const MemberDiv = styled(Link)`
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  transition: 0.2s ease;
+  ${boxShadow}
   max-width: 34rem;
   width: 100%;
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${transition}
 `;
 export const ImgDiv = styled.div`
   width: 100%;

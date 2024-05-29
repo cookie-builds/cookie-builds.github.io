@@ -9,12 +9,13 @@ import dayjs from "dayjs";
 import Buttons from "./buttons";
 import Details from "./details";
 import styled from "styled-components";
+import { boxShadow } from "../../assets/styling";
 
 const IFrame = styled.iframe`
   border: none;
   width: 100%;
   height: 20rem;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
 `;
 
 const EvenementDetail = () => {

@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import styled from "styled-components";
+import { boxShadow, transition } from "../../assets/styling";
 
 
 const SMDiv = styled.div`
@@ -11,7 +12,7 @@ const SMDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 3rem;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
 `;
 
 const SM = styled.a<{color: string}>`
@@ -22,10 +23,7 @@ const SM = styled.a<{color: string}>`
   align-items: center;
   background-color: ${p => p.color};
   color: var(--white);
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${transition}
 `;
 
 const SocialMedia = () => {

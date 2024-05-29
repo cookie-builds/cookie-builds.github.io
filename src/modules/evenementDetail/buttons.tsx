@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { EventType } from '../../context/models';
 import dayjs from 'dayjs';
+import { transition } from '../../assets/styling';
 
 const ButtonDiv = styled.div`
   display: flex;
@@ -16,10 +17,7 @@ const Button = styled(Link)<{$color: string}>`
   font-weight: 500;
   color: var(--white);
   padding: 0.5rem 0.75rem;
-
-  &:hover {
-    transform: scale(1.0125);
-  }
+  ${transition}
 `;
 
 const Buttons = (props: EventType) => {

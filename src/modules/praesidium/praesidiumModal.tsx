@@ -5,6 +5,7 @@ import { PraesidiumMember } from '../../context/models';
 import { useContent } from '../../context/contentContext';
 import { IoClose } from "react-icons/io5";
 import Title from '../../components/title';
+import { boxShadow } from '../../assets/styling';
 
 
 const ModalDiv = styled.div<{$open: number}>`
@@ -16,7 +17,7 @@ const ModalDiv = styled.div<{$open: number}>`
   max-width: 25rem;
   background-color: var(--white);
   z-index: 15000;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  ${boxShadow}
   transition: 0.2s ease;
   overflow: scroll;
 `;

@@ -156,3 +156,13 @@ export const fontSize = {
 export const borderWidth = { sm: '1px', md: '2px', lg: '4px' };
 
 export const fontFamily = { default: 'Poppins', special: 'Roboto Mono' };
+
+export const transition = `
+cursor: pointer;
+transition: 0.2s all ease;
+
+&:hover {
+  transform: scale(1.0125);
+}
+`
+export const boxShadow = `box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);`;

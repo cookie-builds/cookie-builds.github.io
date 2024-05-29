@@ -32,7 +32,7 @@ const SearchDiv = styled.div`
   max-width: 30rem;
 `;
 const Search = styled.input`
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   width: 100%;
@@ -47,6 +47,7 @@ const Search = styled.input`
 const CheckDiv = styled.div`
   display: flex;
   align-items: center;
+  font-size: 0.875rem;
 `
 const Check = styled.input`
   height: 1.25rem;
@@ -54,6 +55,8 @@ const Check = styled.input`
   background-color: var(--gray);
   border: 1px solid #CCCCCC;
   accent-color: var(--green);
+  margin-left: 0.5rem;
+  cursor: pointer;
 
   &:focus-visible, &:focus, &:active {
     border: 1px solid #BBBBBB;
@@ -66,7 +69,7 @@ const Filter = (props: {
   filter: EventFilter;
 }) => {
   return (
-    <TitleDiv>
+    <TitleDiv id="previous-events">
       <Title color="--green" text="Voorgaande evenementen" fullWidth />
       <FilterDiv>
         <CheckDiv>
