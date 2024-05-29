@@ -9,7 +9,7 @@ const CurrentPraesidium = () => {
 
   React.useEffect(() => {
     try {
-      const imagesToPreload: string[] = [...praesidium.map((v) => v.imageUrl)];
+      const imagesToPreload: string[] = [...praesidium.map((v) => v.imageUrl as string)];
       Promise.all(imagesToPreload.map((url) => new Promise(function (resolve, reject) {
         const img = new Image();
         img.onload = resolve;

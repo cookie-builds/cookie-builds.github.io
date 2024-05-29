@@ -70,6 +70,7 @@ const Check = styled.input`
 const Evenementen = () => {
   const { futureEvents, pastEvents, initialized, initEvents } = useContent();
   const [filteredEvents, setFilteredEvents] = React.useState<EventType[]>([]);
+  const [page, setPage] = React.useState(0);
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = React.useState(true);
   const [filter, setFilter] = React.useState<EventFilter>({
@@ -98,6 +99,7 @@ const Evenementen = () => {
       }
       return true;
     }));
+    setPage(0);
   }, [pastEvents, filter, setSearchParams])
 
   // Preload images
@@ -119,6 +121,12 @@ const Evenementen = () => {
       console.error(err);
     }
   }, [futureEvents]);
+
+  const setCurrPage = React.useCallback((newPage: number) => { // length: 10, page: 3
+    if (newPage < 0 || newPage >= Math.ceil(filteredEvents.length / 4))
+      return;
+    setPage(newPage);
+  }, [filteredEvents.length]);
 
   return (
     <div>
@@ -147,7 +155,11 @@ const Evenementen = () => {
                   </SearchDiv>
                 </FilterDiv>
               </TitleDiv>
-              <Events events={filteredEvents} noEventsColor="--black" />
+              <Events events={filteredEvents.slice(page*4, (page+1)*4)} noEventsColor="--black" />
+              <div>
+                <button onClick={() => setCurrPage(page-1)}>Vorige</button>
+                <button onClick={() => setCurrPage(page+1)}>Volgende</button>
+              </div>
             </InnerDiv>
           </OuterSec>
         </>

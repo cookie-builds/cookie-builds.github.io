@@ -20,13 +20,22 @@ export type PraesidiumMember = {
   lName: string;
   nName?: string;
   function: string;
-  imageUrl: string;
+  imageUrl?: string;
   url: string;
   questions: {
     q: string;
     a: string;
   }[];
   funFacts?: string[];
+}
+
+export const defaultPraes: PraesidiumMember = {
+  fName: '',
+  lName: '',
+  nName: '',
+  function: '',
+  questions: [],
+  url: '',
 }
 
 export type ProPraesidium = {
