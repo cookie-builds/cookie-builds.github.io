@@ -143,7 +143,7 @@ const Evenementen = () => {
                     <Check type="checkbox" checked={filter.onlyPictures} onChange={(e) => onChangeOP(e.target.checked)} />
                   </CheckDiv>
                   <SearchDiv>
-                    <Search type="search" value={filter.search} onChange={(e) => onChangeS(e.target.value)} placeholder="Zoek op naam of datum (DD-MM-YYYY)" />
+                    <Search type="search" value={filter.search} onChange={(e) => onChangeS(e.target.value)} placeholder="Zoek op naam of datum (YYYY-MM-DD)" />
                   </SearchDiv>
                 </FilterDiv>
               </TitleDiv>
