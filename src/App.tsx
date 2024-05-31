@@ -49,7 +49,7 @@ function App() {
       ],
     }
   ]);
-  return (
+  return ( // TODO: Add resume pages to website
     <ContentProvider>
       <RouterProvider router={router} />
     </ContentProvider>
