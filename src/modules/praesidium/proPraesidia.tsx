@@ -6,7 +6,6 @@ import { ProPraesidiaDiv, SYYear, SelectedYear, THead, Table, Td, Th, Tr, TrHead
 const ProPraesidia = () => {
   const { proPraesidia } = useContent();
   const [selectedYear, setSelectedYear] = React.useState<ProPraesidium | undefined>(undefined);
-
   const select = React.useCallback(async (v: ProPraesidium) => {
     setSelectedYear(v === selectedYear ? undefined : v);
     setTimeout(() => document.getElementById('selected-year')?.scrollIntoView(), 200)
@@ -30,24 +29,33 @@ const ProPraesidia = () => {
           ))}
         </tbody>
       </Table>
-      <SelectedYear id="selected-year" $open={+(selectedYear ? 1 : 0)}>
-        <SYYear>
-          <span style={{ fontWeight: 600 }}>
-            Praeses:
-          </span>
-          &nbsp;{selectedYear?.praeses}
-        </SYYear>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          {selectedYear?.members.map((m) => (
-            <div key={m.name}>
+      {selectedYear && (
+        <SelectedYear id="selected-year">
+          <div style={{ flex: '1 1 0', padding: '1rem' }}>
+            <SYYear>
               <span style={{ fontWeight: 600 }}>
-                {m.function}:
-                </span>
-                &nbsp;{m.name}
+                Praeses:
+              </span>
+              &nbsp;{selectedYear?.praeses}
+            </SYYear>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {selectedYear?.members.map((m) => (
+                <div key={m.name}>
+                  <span style={{ fontWeight: 600 }}>
+                    {m.function}:
+                    </span>
+                    &nbsp;{m.name}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </SelectedYear>
+          </div>
+          {selectedYear.image && ( <></>
+//             <div style={{ flex: '1 1 0', height: '100%' }}>
+// <SYImage src={`/assets/images/propraesidia/${selectedYear.image}`} />
+//             </div>
+          )}
+        </SelectedYear>
+      )}
     </ProPraesidiaDiv>
   )
 }

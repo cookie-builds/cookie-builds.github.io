@@ -58,13 +58,11 @@ export const Tr = styled.tr<{$selected: number}>`
   }
 `;
 
-export const SelectedYear = styled.div<{$open: number}>`
-  display:  ${p => p.$open ? 'block' : 'none'};
+export const SelectedYear = styled.div`
+  display: flex;
   background-color: white;
-  flex: ${p => p.$open ? '1 1 0' : 'none'};
+  flex: 1 1 0;
   ${boxShadow}
-  padding: 1rem;
-  height: min-content;
 `;
 
 export const MemberDiv = styled(Link)`
@@ -117,4 +115,10 @@ export const Praesidium = styled.div`
 export const SYYear = styled.h3`
   margin-bottom: 1.25rem;
   font-weight: 400;
+`;
+
+export const SYImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 `;
