@@ -36,8 +36,32 @@
     "url": "ab-actis",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Financiën en Verzekeringen"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Mona & Spavy"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Vieze Vuilerik"
+      },
+      {
+        "q": "Favoriete drank",
+        "a": "Vanillejenever / Virgin Mojito"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "Ik ben een boemelaar"
+      },
+      {
+        "q": "Favoriete lettertype",
+        "a": "Calibri Light"
       }
     ]
   },
