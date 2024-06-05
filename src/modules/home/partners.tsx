@@ -57,37 +57,40 @@ const Partners = () => {
         <PartnerScroll>
           <PartnersDiv>
             <Partner>
-              <Img src='/images/assets/logos/hogent.png' />
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='/images/assets/logos/hogent.png' />
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='/images/assets/logos/hogent.png' />
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='/images/assets/logos/hogent.png' />
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='/images/assets/logos/hogent.png' />
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#654321' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#FF0000' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#00FF00' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#0000FF' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#123456' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#654321' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner style={{ backgroundColor: '#FF0000' }}>
-            </Partner>
-            <Partner style={{ backgroundColor: '#00FF00' }}>
-            </Partner>
-            <Partner style={{ backgroundColor: '#0000FF' }}>
+            <Partner>
+              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
           </PartnersDiv>
         </PartnerScroll>
