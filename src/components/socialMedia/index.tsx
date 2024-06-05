@@ -5,19 +5,17 @@ import { boxShadow, transition } from "../../assets/styling";
 
 
 const SMDiv = styled.div`
-  position: fixed;
   bottom: 0.5rem;
   right: 0.5rem;
   z-index: 100;
   display: flex;
-  flex-direction: column;
-  width: 3rem;
+  flex-direction: row;
   ${boxShadow}
 `;
 
 const SM = styled.a<{color: string}>`
   height: 3rem;
-  width: 100%;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;

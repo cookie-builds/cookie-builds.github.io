@@ -34,7 +34,6 @@ const PartnerScroll = styled.div`
 `;
 const PartnersDiv = styled.div`
   display: flex;
-  background-color: blue;
   width: calc(18rem * 10);
   animation: ${scroll} 30s linear infinite;
   display: flex;
@@ -44,6 +43,11 @@ const Partner = styled.div`
   height: 8rem;
   width: 18rem;
 `;
+const Img = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+`;
 
 const Partners = () => {
   return (
@@ -52,7 +56,14 @@ const Partners = () => {
         <Title color="--green" text="Partners" />
         <PartnerScroll>
           <PartnersDiv>
-            <Partner style={{ backgroundColor: '#123456' }}>
+            <Partner>
+              <Img src='/assets/logos/hogent.png' />
+            </Partner>
+            <Partner>
+              <Img src='/assets/logos/hogent.png' />
+            </Partner>
+            <Partner>
+              <Img src='/public/assets/logos/hogent.png' />
             </Partner>
             <Partner style={{ backgroundColor: '#654321' }}>
             </Partner>

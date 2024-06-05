@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Doop from '../components/doop';
 import NavMenu from '../components/navMenu';
-import SocialMedia from '../components/socialMedia';
 import { useContent } from '../context/contentContext';
+import Footer from '../components/footer';
 
 const Site = styled.div`
   overflow-x: hidden;
@@ -46,6 +46,10 @@ const Loader = styled.div`
     clip-path: polygon(0 5%, 100% 0,100% 100%,0 95%,-30px 50%);
     animation: ${l14} 1s infinite linear;
   }
+`;
+
+const OutletDiv = styled.div`
+  flex: 1 1 0;
 `;
 
 const MainRoot = () => {
@@ -90,10 +94,12 @@ const MainRoot = () => {
 
   return (
     <Site style={cssVariables}>
-      <SocialMedia />
       <Doop />
       <NavMenu />
-      <Outlet/>
+      <OutletDiv>
+        <Outlet/>
+      </OutletDiv>
+      <Footer />
     </Site>
   )
 }

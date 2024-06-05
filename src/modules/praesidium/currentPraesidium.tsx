@@ -27,7 +27,7 @@ const CurrentPraesidium = () => {
   return (
     <Praesidium>
       {loading ? (
-        <p style={{ color: 'var(--white)', fontWeight: '300' }}>Evenementen laden...</p>
+        <p style={{ color: 'var(--white)', fontWeight: '300' }}>Praesidium laden...</p>
       ) : (
         praesidium.map((v) => <Member key={`${v.fName};${v.lName}`} {...v} />)
       )}

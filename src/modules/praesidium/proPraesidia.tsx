@@ -6,17 +6,20 @@ import { ProPraesidiaDiv, SYYear, SelectedYear, THead, Table, Td, Th, Tr, TrHead
 const ProPraesidia = () => {
   const { proPraesidia } = useContent();
   const [selectedYear, setSelectedYear] = React.useState<ProPraesidium | undefined>(undefined);
+
+  React.useEffect(() => setSelectedYear(proPraesidia.length > 0 ? proPraesidia[0] : undefined), [proPraesidia]);
+
   const select = React.useCallback(async (v: ProPraesidium) => {
-    setSelectedYear(v === selectedYear ? undefined : v);
+    setSelectedYear(v);
     setTimeout(() => document.getElementById('selected-year')?.scrollIntoView(), 200)
-  }, [selectedYear])
+  }, [])
 
   return (
     <ProPraesidiaDiv>
       <Table>
         <THead>
           <TrHead>
-            <Th style={{ minWidth: '6.5rem'}}>Jaar</Th>
+            <Th style={{ minWidth: '7rem'}}>Jaar</Th>
             <Th style={{ width: '100%'}}>Praeses</Th>
           </TrHead>
         </THead>
