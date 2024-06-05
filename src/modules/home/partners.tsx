@@ -44,8 +44,8 @@ const Partner = styled.div`
   width: 18rem;
 `;
 const Img = styled.img`
-  height: 100%;
-  width: 100%;
+  height: 8rem;
+  width: 18rem;
   object-fit: contain;
 `;
 
