@@ -57,19 +57,19 @@ const Partners = () => {
         <PartnerScroll>
           <PartnersDiv>
             <Partner>
-              <Img src='https://cookie-builds.github.io/assets/logos/hogent.png' />
+              <Img src='/images/assets/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='https://cookie-builds.github.io/assets/logos/hogent.png' />
+              <Img src='/images/assets/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='https://cookie-builds.github.io/assets/logos/hogent.png' />
+              <Img src='/images/assets/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='https://cookie-builds.github.io/assets/logos/hogent.png' />
+              <Img src='/images/assets/logos/hogent.png' />
             </Partner>
             <Partner>
-              <Img src='https://cookie-builds.github.io/assets/logos/hogent.png' />
+              <Img src='/images/assets/logos/hogent.png' />
             </Partner>
             <Partner style={{ backgroundColor: '#654321' }}>
             </Partner>
