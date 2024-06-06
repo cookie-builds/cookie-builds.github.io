@@ -1,13 +1,122 @@
 [
   {
-    "title": "Praesesverkiezing",
-    "tldr": "TLDR",
-    "what": "WHAT",
-    "when": "WHEN",
-    "where": "WHERE",
-    "who": "WHO",
-    "price": "PRICE",
-    "orderDate": "2024-05-11 20:00",
-    "url": "praesesverkiezing-2024"
+    "title": "Praesidiumverkiezing",
+    "what": "Wil je graag opkomen voor een functie? Stuur dan jouw top 3 van functies die je ziet zitten door naar mij in privé (Cremer). De functie die je het liefst wilt doen, zet je uiteraard op nummer 1. 😉",
+    "when": "18 mei 2024 om 16:30",
+    "where": "Café Zeppelin",
+    "who": "Leden van Mercurius",
+    "facebookUrl": "https://www.facebook.com/events/2139730166385136",
+    "orderDate": "2024-05-18 16:30",
+    "url": "praesidiumverkiezing-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/ontgroening-2024.png",
+    "title": "Ontgroening",
+    "what": "Beste Mercurianen, 9 mei is het eindelijk zo ver, onze kleine schachtjes worden groot! Zij zullen dan de laatste beproeving doorstaan om vervolgens te verrijzen als volwaardig lid van de club!",
+    "when": "9 mei 2024 om 10:00",
+    "where": "Stadspark Aalst",
+    "who": "Iedereen",
+    "facebookUrl": "https://www.facebook.com/events/1337047496967346",
+    "orderDate": "2024-05-09 10:00",
+    "url": "ontgroening-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/biermeester-2024.png",
+    "title": "Biermeester: Tour de Zeppelin",
+    "what": "🍺👑 Biermeester\nOPGELET: De biermeester zal dit jaar een ander formaat aannemen dan de afgelopen jaren!",
+    "when": "26 april 2024 om 20:00",
+    "where": "Café Zeppelin",
+    "who": "Leden van Mercurius",
+    "facebookUrl": "https://www.facebook.com/events/795551182061951",
+    "orderDate": "2024-04-26 20:00",
+    "url": "biermeester-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/lustrumbal-2024.png",
+    "title": "Lustrumbal",
+    "what": "Mercurius Aalst bestaat 𝟟𝟝 jaar, en dat moet gevierd worden! 🎉\nAls Praesidium hebben wij de eer om jullie allemaal te mogen verwelkomen op zaterdag 20 april 2024 op ons Lustrumbal ter gelegenheid van ons 75-jarig bestaan. 🥳",
+    "when": "20 april 2024 om 22:00",
+    "where": "De Keirk",
+    "who": "Iedereen",
+    "price": "€15 VVK - €17 ADK",
+    "facebookUrl": "https://www.facebook.com/events/888215352930541",
+    "orderDate": "2024-04-20 22:00",
+    "url": "lustrumbal-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/vriendjescantus-2024.png",
+    "title": "Vriendjescantus",
+    "what": "Ben jij huidig of toekomstig student en geïnteresseerd om je te laten dopen bij onze studentenvereniging? Geen student (meer), maar wil je gewoon eens een leuke cantus meemaken? Dan heb je geluk! Onze clubleden krijgen namelijk de kans om wat vrienden en/of familieleden uit te nodigen om mee te komen cantussen.",
+    "when": "6 april 2024 om 20:00",
+    "where": "Onthaalcomplex Keizershallen",
+    "who": "Leden van Mercurius + Uitgenodigden",
+    "facebookUrl": "https://www.facebook.com/events/336445059349140",
+    "orderDate": "2024-04-06 20:00",
+    "url": "vriendjescantus-2024"
+  },
+  {
+    "title": "Clubweekend",
+    "what": "Het tofste weekend van het jaar is weer bijna daar: het Mercurius clubweekend!\nDit jaar zoeken we het niet te ver van huis, we gaan naar één van de andere uiterste hoeken van de marginale driehoek: Geraardsbergen!\nWe zullen verblijven in de Chirolokalen van 'Chiroheem De Korendries'.\nHet clubweekend zal er dit jaar ook wat anders uitzien als gewoonlijk, de schachten zullen namelijk nog NIET ontgroent worden op het clubweekend (we kunnen ze dan nog wat langer commanderen xoxo).",
+    "when": "29 maart 2024 om 17:00 - 31 maart om 11:00",
+    "where": "Chiroheem De Korendries",
+    "who": "Leden van Mercurius",
+    "facebookUrl": "https://www.facebook.com/events/1071967414007035",
+    "orderDate": "2024-03-29 17:00",
+    "url": "clubweekend-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/boardgame-2024-2.png",
+    "title": "Boardgame Clubavond",
+    "what": "Beste nerds 🤓 (en niet-nerds die graag wel eens een bordspel spelen) 🎲\nVoor een tweede keer op rij keren we terug naar de Hermelijn 🏠, want waar anders kunnen we beter bordspellen spelen dan in een strip- en gamesspeciaalzaak! 🎉\nOndertussen zouden de meesten toch al bekend moeten zijn met het concept van onze bordspelclubavond. Kort uitgelegd is er een eindeloze selectie aan spellen om te spelen, waaronder bijvoorbeeld Exploding Kittens 🐱, Monopoly 💼, Ticket to Ride 🚂,... De spellen die daadwerkelijk gespeeld worden, zullen op een democratische manier gekozen worden (of je zet jezelf gewoon in een hoekje en speelt alleen met het spel dat je wilt spelen). 🗳️\nWees gerust, er is voor ieder wat wils, we beloven dat we geen hele avond Monopoly zullen spelen! 🚫💰",
+    "when": "23 maart 2024 om 19:00",
+    "where": "Hermelijn",
+    "who": "Iedereen",
+    "facebookUrl": "https://www.facebook.com/events/1710496462810044",
+    "orderDate": "2024-03-23 19:00",
+    "url": "boardgame-2024-2"
+  },
+  {
+    "imageUrl": "/assets/images/events/oude-zakken-2024.png",
+    "title": "Oude Zakken Cantus",
+    "what": "Beste Mercurianen, en nog specifieker, beste Oude zakken\nHaalt de rolator maar boven, de kiel van de zolder en de codex van onder het stof want op zaterdag 24 februari vanaf 20u kunnen jullie namelijk jullie studententijd herbeleven!\nMercurius en haar praesidium nodigt alle pro-senioren en oud-leden (en natuurlijk ook de huidige actieve commilitones) uit voor de oude zakken cantus!\nHoe zit deze cantus in elkaar?\nElke (gewillige) pro-senior kan en mag een klein deeltje van de cantus voorzitten (eventueel met zijn of haar toenmalig praesidium!). Dit zal +/- een halfuurtje zijn.\nWees gerust, ook wij weten dat met ouderdom het uithoudingsvermogen naar beneden gaat. Daarom hebben wij een tweede zaal voorzien in de Brug waar je, als je genoeg gecantust hebt, kan gaan bijpraten met andere aanwezigen.",
+    "when": "24 februari 2024 om 20:00",
+    "where": "De Brug",
+    "who": "Leden van Mercurius",
+    "facebookUrl": "https://www.facebook.com/events/600314422240934",
+    "orderDate": "2024-02-24 20:00",
+    "url": "oude-zakken-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/brouwerijbezoek-2024.png",
+    "title": "Brouwerijbezoek Huyghe",
+    "what": "Na het succesvolle brouwerij bezoek aan Duvel vorig jaar is het dit jaar de tijd ons onder te dompelen in het magische brouwproces van Delirium Tremens. Ook wel bekend als 'De roze Olifant' .",
+    "when": "17 februari 2024 om 14:00",
+    "where": "Brouwerij Huyghe",
+    "who": "Iedereen",
+    "price": "€15",
+    "facebookUrl": "https://www.facebook.com/events/941274043995267",
+    "orderDate": "2024-02-17 14:00",
+    "url": "brouwerijbezoek-2024"
+  },
+  {
+    "imageUrl": "/assets/images/events/nieuwjaarsreceptie-2024.png",
+    "title": "Nieuwjaarsreceptie",
+    "what": "Het was blok, toen kwamen de feesten en kort daarop de examens. Onze hersenen zijn verkleind en sommigen zullen alcohol niet meer verwerken.\nMAAR elk jaar is er na deze heftige periode 1 zekerheid: onze nieuwjaarsreceptie! Het leuke aan dit alles is dat iedereen het nu weer kan verantwoorden, mits de toestemming van onze moeders, om nog eens op café te gaan!\nEn omdat een gratis cavaatje natuurlijk altijd smaakt!\nSpreken wij, vanuit De Oude Garde en het Praesidium van onze geliefde club Mercurius.\nZet jullie aanwezig, spreek, geniet, maakt lawaai maar vooral: Komt nog is af!\nDit voor alle Pro-Seniores, schachten, leden, leden van andere clubs en zelf gewoon sympathisanten.",
+    "when": "2 februari 2024 om 20:00",
+    "where": "Café Zeppelin",
+    "who": "Leden van Mercurius",
+    "facebookUrl": "https://www.facebook.com/events/746477836909648",
+    "orderDate": "2024-02-02 20:00",
+    "url": "nieuwjaarsreceptie-2024"
+  },
+  {
+    "title": "Boardgame Clubavond",
+    "what": "Na reeds enkele weken 'hard' te studeren hebben we nu allemaal wel een pauze verdiend, ook degene dat niet eens hoeven te studeren.\nKom en geniet mee van een frisse pint (en het gezelschap) op vrijdag 19/01 in de Zeppelin!",
+    "when": "19 januari 2024 om 20:00",
+    "where": "Café Zeppelin",
+    "who": "Iedereen",
+    "facebookUrl": "https://www.facebook.com/events/1311481319527191",
+    "orderDate": "2024-01-19 20:00",
+    "url": "boardgame-2024-1"
   }
 ]

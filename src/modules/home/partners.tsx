@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { InnerDiv, OuterSec } from '../../components/standard';
 import Title from '../../components/title';
+import { Link } from 'react-router-dom';
 
 const scroll = keyframes`
   0% { transform: translateX(0); }
@@ -38,7 +39,7 @@ const PartnersDiv = styled.div`
   animation: ${scroll} 30s linear infinite;
   display: flex;
 `;
-const Partner = styled.div`
+const Partner = styled(Link)`
   flex: 1 1 0;
   height: 8rem;
   width: 18rem;
@@ -56,40 +57,40 @@ const Partners = () => {
         <Title color="--green" text="Partners" />
         <PartnerScroll>
           <PartnersDiv>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
-            <Partner>
+            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
               <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
             </Partner>
           </PartnersDiv>

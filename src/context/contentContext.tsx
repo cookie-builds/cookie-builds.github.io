@@ -48,8 +48,8 @@ export const ContentProvider = ({children}: { children: React.ReactNode}) => {
     const events = [...dataEvents, ...dataArchive]
       .map(v => ({ ...v, imageUrl: v.imageUrl || BASE_IMAGE }))
       .sort((v1, v2) => v1.orderDate.localeCompare(v2.orderDate));
-    const fe = events.filter((v) => v.orderDate >= now)
-    const pe = events.filter((v) => v.orderDate < now)
+    const fe = events.filter((v) => v.orderDate >= now);
+    const pe = events.filter((v) => v.orderDate < now).reverse();
     setFutureEvents(fe);
     setPastEvents(pe);
 
