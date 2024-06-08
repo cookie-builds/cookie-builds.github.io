@@ -35,29 +35,38 @@ const Details = (props: EventType) => {
             <DText>{props.tldr}</DText>
           </div>
         )}
+        { props.what && (
         <div>
           <DTitle>Wat?</DTitle>
           <DText>{props.what}</DText>
         </div>
-        
+        )}
       </DetailsPart>
       <DetailsPart>
+        { props.when && (
         <div>
           <DTitle>Wanneer?</DTitle>
           <DText>{props.when}</DText>
         </div>
+        )}
+        { props.where && (
         <div>
           <DTitle>Waar?</DTitle>
           <DText>{props.where}</DText>
         </div>
+        )}
+        { props.who && (
         <div>
           <DTitle>Voor wie?</DTitle>
           <DText>{props.who}</DText>
         </div>
+        )}
+        { props.price && (
         <div>
           <DTitle>Prijs?</DTitle>
           <DText>{props.price}</DText>
         </div>
+        )}
       </DetailsPart>
     </DetailsDiv>
   )
