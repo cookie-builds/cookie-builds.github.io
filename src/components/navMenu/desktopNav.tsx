@@ -18,7 +18,7 @@ const SLink = styled(Link)<{ $active?: number, $isHome?: number }>`
   font-weight: ${p => p.$active ? 500 : 300};
   text-align: center;
   transition: 0.2s ease;
-
+  ${p => p.$isHome ? 'text-shadow: 0px 0px 2px var(--black);' : ''}
   &:hover {
     background-color: ${p => p.$isHome ? '#FFFFFF20' : 'var(--light-green)'};
   }

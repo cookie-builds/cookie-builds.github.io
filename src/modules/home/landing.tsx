@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import LandingPic from '/assets/images/landing-pic.jpg';
-import Schild from '../../components/schild';
+// import Schild from '../../components/schild';
 import { mediaQuery } from '../../assets/styling';
-import React from 'react';
+// import React from 'react';
 
 const Div = styled.div<{$img: string}>`
   position: relative;
@@ -10,31 +10,47 @@ const Div = styled.div<{$img: string}>`
   background-image: url(${p => p.$img});
   background-size: cover;
   background-position: center;
-  ${mediaQuery}
 `;
 
-const LogoDiv = styled.div<{$height: number}>`
-  height: ${p => p.$height}px;
+const Span = styled.span`
   position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  ${mediaQuery.small`
-    height: 320px;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  bottom: 15rem;
+  width: 100%;
+  text-align: center;
+
+  ${mediaQuery.extraSmall`
+    font-size: 3rem;
+  `}
+
+  ${mediaQuery.medium`
+    font-size: 5rem;
   `}
 `;
 
-const Landing = () => {
-  const [logoHeight, setLogoHeight] = React.useState<number>(320);
+// const LogoDiv = styled.div<{$height: number}>`
+//   height: ${p => p.$height}px;
+//   position: absolute;
+//   bottom: 1rem;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   ${mediaQuery.small`
+//     height: 320px;
+//   `}
+// `;
 
-  React.useEffect(() => {
-    setLogoHeight(window.innerWidth > 768 ? 320 : 240)
-  }, [])
+const Landing = () => {
+
+  // React.useEffect(() => {
+  //   setLogoHeight(window.innerWidth > 768 ? 320 : 240)
+  // }, [])
+
   return (
     <Div $img={LandingPic}>
-      <LogoDiv $height={logoHeight}>
-        <Schild colored={true} height={logoHeight} />
-      </LogoDiv>
+      <Span>Studentenclub Mercurius</Span>
     </Div>
   )
 }
