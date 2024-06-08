@@ -1,5 +1,5 @@
 export const event = {
-  "imageUrl": "",
+  "imageUrl": "/assets/images/events/.png",
   "title": "",
   "tldr": "",
   "what": "",
@@ -10,6 +10,6 @@ export const event = {
   "facebookUrl": "",
   "registerUrl": "",
   "mapsUrl": "",
-  "orderDate": "2024-04-09 20:00",
+  "orderDate": "2023-08-31 20:00",
   "url": ""
 }
