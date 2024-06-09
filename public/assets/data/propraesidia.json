@@ -151,12 +151,94 @@
   {
     "year": "2019-2020",
     "praeses": "Elien 'Backie' De Backer",
-    "members": []
+    "members": [
+      {
+        "function": "Vice-Praeses",
+        "name": "Hanne 'Jeanine' Van Dorpe"
+      },
+      {
+        "function": "Quaestor",
+        "name": "Stijn 'Schacht' Boel"
+      },
+      {
+        "function": "Ab-Actis",
+        "name": "Lore Corryn"
+      },
+      {
+        "function": "Cantor",
+        "name": "Julie Deboel"
+      },
+      {
+        "function": "Schachtentemmer",
+        "name": "Sven 'Duivenmelker' Pepermans"
+      },
+      {
+        "function": "Sport & Cultuur",
+        "name": "Jarno 'Mona' Simons"
+      },
+      {
+        "function": "Zedenmeester",
+        "name": "Keanu 'Kano' Robberechts"
+      },
+      {
+        "function": "P.R.",
+        "name": "Lynn Juchtmans"
+      },
+      {
+        "function": "Webmaster",
+        "name": "Shauni Van de Velde"
+      }
+    ]
   },
   {
     "year": "2018-2019",
     "praeses": "Elien 'Backie' De Backer",
-    "members": []
+    "members": [
+      {
+        "function": "Vice-Praeses",
+        "name": "Kristof 'Krissy' van Moorter"
+      },
+      {
+        "function": "Ab-Actis",
+        "name": "Hanne 'Jeanine' Van Dorpe"
+      },
+      {
+        "function": "Quaestor",
+        "name": "Stijn 'Schacht' Boel"
+      },
+      {
+        "function": "Schachtentemmer",
+        "name": "Eline 'Dwaynie' De Blander"
+      },
+      {
+        "function": "Cantor",
+        "name": "Elien 'Backie' De Backer"
+      },
+      {
+        "function": "Zedenmeester",
+        "name": "Timothy 'hardstijl' Aerts"
+      },
+      {
+        "function": "Feest",
+        "name": "Quirine Supply"
+      },
+      {
+        "function": "Sport",
+        "name": "Nikolas 'Bally' De Backer"
+      },
+      {
+        "function": "Cultuur",
+        "name": "Schana 'Scania' Tierin"
+      },
+      {
+        "function": "P.R.'s",
+        "name": "Julie Hendrickx & Sander 'Wasabi' Abbasali"
+      },
+      {
+        "function": "Webmaster",
+        "name": "Mathias Persoons"
+      }
+    ]
   },
   {
     "year": "2017-2018",
