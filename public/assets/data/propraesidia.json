@@ -372,7 +372,7 @@
     "members": [
       {
         "function": "Vice-Praeses",
-        "name": "Jurgen 'Woody' Tire"
+        "name": "Jurgen 'Woody' Tiré"
       },
       {
         "function": "Quaestor",
@@ -423,12 +423,114 @@
   {
     "year": "2013-2014",
     "praeses": "Brigitte 'B' Bauwens",
-    "members": []
+    "members": [
+      {
+        "function": "Vice-Praeses",
+        "name": "Stéfanie Masquelier"
+      },
+      {
+        "function": "Ab-Actis",
+        "name": "Jurgen 'Woody' Tiré"
+      },
+      {
+        "function": "Quaestor",
+        "name": "Stef Dieu"
+      },
+      {
+        "function": "Schachtentemmer",
+        "name": "Annelies De Corte"
+      },
+      {
+        "function": "Doopmeesters",
+        "name": "Olivier D'Hooghe & Wies De Rybel"
+      },
+      {
+        "function": "Cantor",
+        "name": "Jordy Vlassembrouck"
+      },
+      {
+        "function": "Sport & Cultuur",
+        "name": "Yenthe Roelandt"
+      },
+      {
+        "function": "P.R.",
+        "name": "Dwayne 'DJ' De Blander"
+      },
+      {
+        "function": "Feestpraesessen",
+        "name": "Robin Franz & Anke Kerger"
+      },
+      {
+        "function": "Zedenmeester",
+        "name": "Steven Meert"
+      },
+      {
+        "function": "Webmaster",
+        "name": "Thomas Piercourt"
+      },
+      {
+        "function": "Moeder Praesidium",
+        "name": "Siegii Dierickx"
+      }
+    ]
   },
   {
     "year": "2012-2013",
     "praeses": "Ignace 'Lowie' De Brucker",
-    "members": []
+    "members": [
+      {
+        "function": "Vice-Praeses",
+        "name": "Brigitte 'B' Bauwens"
+      },
+      {
+        "function": "Quaestor",
+        "name": "Stef 'Emmerken' Dieu"
+      },
+      {
+        "function": "Ab-Actis",
+        "name": "Dwayne 'DJ' De Blander"
+      },
+      {
+        "function": "Schachtentemmer",
+        "name": "Jurgen 'Woody' Tiré"
+      },
+      {
+        "function": "Doopmeester",
+        "name": "Jochen De Clerq"
+      },
+      {
+        "function": "Cantor",
+        "name": "Jochen De Clerq"
+      },
+      {
+        "function": "Zedenmeester",
+        "name": "Wies De Rybel"
+      },
+      {
+        "function": "Sport & Cultuur",
+        "name": "Yenthe Roelandt"
+      },
+      {
+        "function": "P.R.",
+        "name": "Steven Meert"
+      },
+      {
+        "function": "Feestpraesessen",
+        "name": "Nick 'Vanessa' Schouppe & Joeri 'Sherlock' Hulsbosch"
+      },
+      {
+        "function": "Paparazi",
+        "name": "Stéfanie Masquelier"
+      },
+      {
+        "function": "Materiaalmeester",
+        "name": "Ken Roossens"
+      },
+      {
+        "function": "Webmaster",
+        "name": "Kevin 'Bulkie' Van den Bulcke"
+      }
+    ]
   },
   {
     "year": "2011-2012",
