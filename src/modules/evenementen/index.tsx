@@ -69,7 +69,6 @@ const Evenementen = () => {
     if (newPage < 0 || newPage >= Math.ceil(filteredEvents.length / 4))
       return;
     setPage(newPage);
-    setTimeout(() => document.getElementById('previous-events')?.scrollIntoView(), 200)
   }, [filteredEvents.length]);
 
   return (
