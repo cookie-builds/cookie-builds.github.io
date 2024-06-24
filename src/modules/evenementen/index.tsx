@@ -9,6 +9,7 @@ import { useSearchParams } from "react-router-dom";
 import { EventFilter, EventType } from "../../context/models";
 import Filter from "./filter";
 import Buttons from "./buttons";
+import Helmet from "../../components/helmet";
 
 const Evenementen = () => {
   const { futureEvents, pastEvents, initialized, initEvents } = useContent();
@@ -72,28 +73,32 @@ const Evenementen = () => {
   }, [filteredEvents.length]);
 
   return (
-    <div>
-      <Banner imgUrl={BannerImg} />
-      {loading ? (
-        <p style={{ color: 'var(--white)', fontWeight: '300' }}>Evenementen laden...</p>
-      ) : (
-        <>
-          <OuterSec>
-            <InnerDiv>
-              <Title color="--white" text="Komende evenementen" />
-              <Events events={futureEvents} noEventsColor="--white" />
-            </InnerDiv>
-          </OuterSec>
-          <OuterSec>
-            <InnerDiv style={{paddingTop: '0'}}>
-              <Filter onChangeOP={onChangeOP} onChangeS={onChangeS} filter={filter} />
-              <Events events={filteredEvents.slice(page*4, (page+1)*4)} noEventsColor="--black" />
-              <Buttons back={() => setCurrPage(page-1)} forward={() => setCurrPage(page+1)} minPage={page === 0} maxPage={page === Math.ceil(filteredEvents.length / 4)-1} />
-            </InnerDiv>
-          </OuterSec>
-        </>
-      )}
-    </div>
+    <>
+      <Helmet title="Mercurius Aalst | Evenementen" />
+      <div>
+        <Banner imgUrl={BannerImg} />
+        {loading ? (
+          <p style={{ color: 'var(--white)', fontWeight: '300' }}>Evenementen laden...</p>
+        ) : (
+          <>
+            <OuterSec>
+              <InnerDiv>
+                <Title color="--white" text="Komende evenementen" />
+                <Events events={futureEvents} noEventsColor="--white" />
+              </InnerDiv>
+            </OuterSec>
+            <OuterSec>
+              <InnerDiv style={{paddingTop: '0'}}>
+                <Filter onChangeOP={onChangeOP} onChangeS={onChangeS} filter={filter} />
+                {filteredEvents.length > 4 && <Buttons back={() => setCurrPage(page-1)} forward={() => setCurrPage(page+1)} minPage={page === 0} maxPage={page === Math.ceil(filteredEvents.length / 4)-1} />}
+                <Events events={filteredEvents.slice(page*4, (page+1)*4)} noEventsColor="--black" />
+                {filteredEvents.length > 4 && <Buttons back={() => setCurrPage(page-1)} forward={() => setCurrPage(page+1)} minPage={page === 0} maxPage={page === Math.ceil(filteredEvents.length / 4)-1} />}
+              </InnerDiv>
+            </OuterSec>
+          </>
+        )}
+      </div>
+    </>
   )
 }
 

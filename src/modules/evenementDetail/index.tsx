@@ -10,6 +10,7 @@ import Buttons from "./buttons";
 import Details from "./details";
 import styled from "styled-components";
 import { boxShadow } from "../../assets/styling";
+import Helmet from "../../components/helmet";
 
 const IFrame = styled.iframe`
   border: none;
@@ -34,17 +35,20 @@ const EvenementDetail = () => {
 
   if (!event) return (<>loading</>)
   return (
-    <div>
-      <Banner imgUrl={event.imageUrl} event />
-      <OuterSec>
-        <InnerDiv style={{ paddingTop: '1.5rem'}}>
-          <Title color="--green" text={`${event.title} ${event.orderDate < dayjs().format('YYYY-MM-DD HH:mm') ? `(${event.orderDate.slice(0, 4)})` : ''}`} />
-          <Details {...event} />
-          <Buttons {...event} />
-          {event.mapsUrl && <IFrame src={event.mapsUrl} loading="lazy" />}
-        </InnerDiv>
-      </OuterSec>
-    </div>
+    <>
+      <Helmet title={`Mercurius Aalst | ${event.title} ${event.orderDate.slice(0, 4)}`} type="article" description={event.what} image={event.imageUrl} />
+      <div>
+        <Banner imgUrl={event.imageUrl} event />
+        <OuterSec>
+          <InnerDiv style={{ paddingTop: '1.5rem'}}>
+            <Title color="--green" text={`${event.title} ${event.orderDate < dayjs().format('YYYY-MM-DD HH:mm') ? `(${event.orderDate.slice(0, 4)})` : ''}`} />
+            <Details {...event} />
+            <Buttons {...event} />
+            {event.mapsUrl && <IFrame src={event.mapsUrl} loading="lazy" />}
+          </InnerDiv>
+        </OuterSec>
+      </div>
+    </>
   )
 }
 

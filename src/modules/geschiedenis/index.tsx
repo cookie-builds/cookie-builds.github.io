@@ -5,6 +5,7 @@ import { useContent } from '../../context/contentContext';
 import Emergence from './emergence';
 import Timeline from './timeline';
 import BannerImg from '/assets/images/landing-pic.jpg';
+import Helmet from '../../components/helmet';
 
 const Geschiedenis = () => {
   const { initialized, initTimeline } = useContent();
@@ -14,11 +15,14 @@ const Geschiedenis = () => {
       initTimeline();
   }, [initialized.timeline, initTimeline]);
   return (
-    <div>
-      <Banner imgUrl={BannerImg} />
-      <Emergence />
-      {initialized.timeline && <Timeline />}
-    </div>
+    <>
+      <Helmet title="Mercurius Aalst | Geschiedenis" />
+      <div>
+        <Banner imgUrl={BannerImg} />
+        <Emergence />
+        {initialized.timeline && <Timeline />}
+      </div>
+    </>
   )
 };
 

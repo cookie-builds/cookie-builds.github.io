@@ -7,6 +7,7 @@ import ProPraesidia from "./proPraesidia";
 import PraesidiumModal from "./praesidiumModal";
 import { useContent } from "../../context/contentContext";
 import React from "react";
+import Helmet from "../../components/helmet";
 
 const Praesidium = () => {
   const { initialized, initPraesidium } = useContent();
@@ -18,6 +19,7 @@ const Praesidium = () => {
 
   return (
     <>
+      <Helmet title="Mercurius Aalst | Praesidium" />
       <PraesidiumModal />
       <div>
         <Banner imgUrl={BannerImg} />
@@ -27,7 +29,7 @@ const Praesidium = () => {
             <CurrentPraesidium />
           </InnerDiv>
         </OuterSec>
-        <OuterSec style={{backgroundColor: 'var(--light-green)'}}>
+        <OuterSec $color='--light-green'>
           <InnerDiv $even={1}>
             <Title color="--green"  text="Pro-Praesidia" />
             <ProPraesidia />
