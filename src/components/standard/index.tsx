@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 import { mediaQuery } from '../../assets/styling';
 
-export const OuterSec = styled.section`
+export const OuterSec = styled.section<{ $color?: string }>`
   width: 100%;
   padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${p => `var(${p.$color})` ?? 'transparent'};
   ${mediaQuery.medium`
   padding: 0 4rem;
   `}

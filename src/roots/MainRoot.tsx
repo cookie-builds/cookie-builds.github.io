@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Doop from '../components/doop';
 import NavMenu from '../components/navMenu';
@@ -55,6 +55,7 @@ const OutletDiv = styled.div`
 const MainRoot = () => {
   const content = useContent();
   const [imagesLoaded, setImagesLoaded] = React.useState(false);
+  const { pathname } = useLocation();
   const cssVariables = {
     '--black': '#000000',
     '--white': '#FFFFFF',
@@ -94,7 +95,7 @@ const MainRoot = () => {
 
   return (
     <Site style={cssVariables}>
-      <Doop />
+      <Doop $show={!pathname.includes('doop')} />
       <NavMenu />
       <OutletDiv>
         <Outlet/>

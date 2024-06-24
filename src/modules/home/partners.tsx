@@ -51,48 +51,28 @@ const Img = styled.img`
 `;
 
 const Partners = () => {
+  const partners: { to: string, imgSrc: string }[] = [
+    {
+      imgSrc: '/assets/images/logos/hogent.png',
+      to: 'https://www.hogent.be/dit-is-hogent/campussen/aalst/',
+    },
+    {
+      imgSrc: '/assets/images/logos/zeppelin.png',
+      to: 'https://www.zeppelin-aalst.be/',
+    },
+  ];
+
   return (
     <OuterSec>
       <InnerDiv>
         <Title color="--green" text="Partners" />
         <PartnerScroll>
           <PartnersDiv>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
-            <Partner to='https://www.hogent.be/dit-is-hogent/campussen/aalst/'>
-              <Img src='https://cookie-builds.github.io/assets/images/logos/hogent.png' />
-            </Partner>
+            {[0, 1, 3, 4].map(_i => partners.map(v => (
+              <Partner to={v.to}>
+                <Img src={v.imgSrc} />
+              </Partner>
+            )))}
           </PartnersDiv>
         </PartnerScroll>
       </InnerDiv>

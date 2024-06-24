@@ -15,15 +15,15 @@ function App() {
         },
         {
           path: 'lan',
-          element: <></>
+          element: <Elements.Lan />
         },
         {
           path: 'praesidium',
-          element: <Elements.Praesidium/>
+          element: <Elements.Praesidium />
         },
         {
           path: 'geschiedenis',
-          element: <Elements.Geschiedenis/>
+          element: <Elements.Geschiedenis />
         },
         {
           path: 'clublied',
@@ -34,17 +34,17 @@ function App() {
           children: [
             {
               path: '',
-              element: <Elements.Evenementen/>,
+              element: <Elements.Evenementen />,
             },
             {
               path: ':eventUrl',
-              element: <Elements.EvenementDetail/>,
+              element: <Elements.EvenementDetail />,
             },
           ]
         },
         {
           path: 'doop',
-          element: <></>
+          element: <Elements.Doop />
         },
       ],
     }
