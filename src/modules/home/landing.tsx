@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import LandingPic from '/assets/images/landing-pic.jpg';
-// import Schild from '../../components/schild';
 import { mediaQuery } from '../../assets/styling';
-// import React from 'react';
 
 const Div = styled.div<{$img: string}>`
   position: relative;
@@ -17,10 +15,11 @@ const Span = styled.span`
   color: var(--white);
   font-size: 2.5rem;
   font-weight: 600;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  bottom: 15rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  bottom: 8rem;
   width: 100%;
   text-align: center;
+  user-select: none;
 
   ${mediaQuery.extraSmall`
     font-size: 3rem;
@@ -31,22 +30,7 @@ const Span = styled.span`
   `}
 `;
 
-// const LogoDiv = styled.div<{$height: number}>`
-//   height: ${p => p.$height}px;
-//   position: absolute;
-//   bottom: 1rem;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   ${mediaQuery.small`
-//     height: 320px;
-//   `}
-// `;
-
 const Landing = () => {
-
-  // React.useEffect(() => {
-  //   setLogoHeight(window.innerWidth > 768 ? 320 : 240)
-  // }, [])
 
   return (
     <Div $img={LandingPic}>

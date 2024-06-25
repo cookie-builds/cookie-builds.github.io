@@ -53,7 +53,7 @@ const NavMenu = () => {
   }, [openNav]);
   return (
     <>
-      <SHeader $isHome={+(pathname === '/')}>
+      <SHeader $isHome={+(pathname === '/' || pathname === '/test-home')}>
         <SInnerDiv>
           <SLink to='/'>
             <Schild colored={pathname !== '/' || openNav} color={openNav ? '#217226': 'var(--white)'} height={80} />

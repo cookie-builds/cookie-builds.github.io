@@ -3,8 +3,10 @@ import Welcome from "./welcome";
 import NextEvent from "./nextEvent";
 import Partners from "./partners";
 import Landing from "./landing";
+import Landing2 from "./landing2";
 import { useContent } from "../../context/contentContext";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const HomeDiv = styled.div`
   position: relative;
@@ -15,6 +17,7 @@ const HomeDiv = styled.div`
 
 const Home = () => {
   const { initialized, initEvents } = useContent();
+  const location = useLocation();
 
   React.useEffect(() => {
     if (!initialized.events)
@@ -23,7 +26,11 @@ const Home = () => {
 
   return (
     <HomeDiv>
-      <Landing />
+      {location.pathname.includes('test-home') ? (
+        <Landing />
+      ) : (
+        <Landing2 />
+      )}
       <Welcome />
       <NextEvent />
       <Partners />
