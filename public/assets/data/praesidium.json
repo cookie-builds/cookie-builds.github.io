@@ -83,7 +83,7 @@
       },
       {
         "q": "Favoriete quote",
-        "a": "Love until your veins can flow like water, your lungs can breathe like a newborn baby and your heart can love you more than anything."
+        "a": "All we have is now - the present"
       },
       {
         "q": "Favoriete cantuslied",
@@ -241,8 +241,24 @@
     "url": "pr",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Biomedische laboraturiumtechnologie, keuzetraject forensisch onderzoek"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2023-2024"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Kleinen & Bulkie"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "The Wild Rover"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Think like a proton, always positive."
       }
     ]
   }
