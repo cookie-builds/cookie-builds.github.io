@@ -17,12 +17,13 @@ const EventsDiv = styled.div`
 const P = styled.p<{$color: string}>`
   color: var(${p => p.$color});
   font-weight: 300;
+  padding: 2rem 0;
 `;
 
 const Events = (props: { events: EventType[], noEventsColor: string }) => {
 
   if (props.events.length === 0) return (
-    <P $color={props.noEventsColor}>Geen evenementen met deze filters</P>
+    <P $color={props.noEventsColor}>Geen evenementen met deze filters. Deze databank wordt momenteel nog bijgevuld, kijk dus zeker binnenkort eens terug.</P>
   )
 
   return (

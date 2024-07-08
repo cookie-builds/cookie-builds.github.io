@@ -37,7 +37,7 @@ const NavModalDiv = styled.div<{open: number}>`
 `;
 
 const InnerNavDiv = styled.div`
-  margin-top: 10rem;
+  margin-top: 12rem;
   display: flex;
   flex-direction: column;
   width: 100%;

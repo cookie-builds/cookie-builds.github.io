@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 
 const HomeDiv = styled.div`
   position: relative;
-  top: -7rem;
+  top: -8.25rem;
   width: 100%;
   margin-bottom: -7rem;
 `;
