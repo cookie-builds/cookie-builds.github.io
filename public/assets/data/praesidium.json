@@ -8,8 +8,24 @@
     "url": "praeses",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Graduaat Productiebeheer"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Krissy & Wies"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "Loch Lomon'"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "You see, it's like I always say, `Anything worth doing is worth doing with a beer.`"
       }
     ]
   },
@@ -22,8 +38,24 @@
     "url": "vice-praeses",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Toegepaste Informatica (Systeem- en netwerkbeheer)"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2023-2024"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Duivenmelker & Mona"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "De Blauwvoet"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Sometimes I stagger even myself with my genius."
       }
     ]
   },
@@ -32,12 +64,12 @@
     "lName": "De Ridder",
     "nName": "Koeke",
     "function": "Ab-Actis",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/ruth.jpg",
     "url": "ab-actis",
     "questions": [
       {
         "q": "Studie",
-        "a": "Financiën en Verzekeringen"
+        "a": "Bedrijfsmanagement (Financiën en Verzekeringen)"
       },
       {
         "q": "Doopjaar",
@@ -62,6 +94,66 @@
       {
         "q": "Favoriete lettertype",
         "a": "Calibri Light"
+      }
+    ]
+  },
+  {
+    "fName": "Kylian",
+    "lName": "Lenoir",
+    "nName": "Peblu",
+    "function": "Schachtentemmer",
+    "imageUrl": "/assets/images/praesidium/kylian.jpg",
+    "url": "schachtentemmer",
+    "questions": [
+      {
+        "q": "Studie",
+        "a": "Grafische & Digitale Media"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Ballie"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "A la claire fontaine"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Be yourself, everyone else is already taken."
+      }
+    ]
+  },
+  {
+    "fName": "Kiran",
+    "lName": "Trifin",
+    "nName": "Brum",
+    "function": "Doopmeester",
+    "imageUrl": "/assets/images/praesidium/kiran.jpg",
+    "url": "doopmeester",
+    "questions": [
+      {
+        "q": "Studie",
+        "a": "Bedrijfsmanagement (Accountancy & Fiscaliteit)"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Duivenmelker & Luna"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "De Blauwvoet"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Life is like a penis. Sometimes it's up, sometimes it's down, but it won't stay hard forever."
       }
     ]
   },
@@ -96,25 +188,24 @@
     "lName": "Anné",
     "nName": "Juan",
     "function": "Quaestor",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/gohan.jpg",
     "url": "quaestor",
     "questions": [
       {
-        "q": "",
-        "a": ""
-      }
-    ]
-  },
-  {
-    "fName": "Goten",
-    "lName": "Anné",
-    "function": "Sport & Cultuur",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
-    "url": "sport-en-cultuur",
-    "questions": [
+        "q": "Studie",
+        "a": "Graduaat Accounting Administration"
+      },
       {
-        "q": "",
-        "a": ""
+        "q": "Meter(s)/Peter(s)",
+        "a": "Pieter"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2021-2022"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "The Wild Rover"
       }
     ]
   },
@@ -129,6 +220,102 @@
       {
         "q": "",
         "a": ""
+      }
+    ]
+  },
+  {
+    "fName": "Leana",
+    "lName": "Sasi Andrade",
+    "function": "Zedenmeesteres",
+    "imageUrl": "/assets/images/praesidium/leana.jpeg",
+    "url": "zedenmeester-2",
+    "questions": [
+      {
+        "q": "Studie",
+        "a": "Bachelor Farmaceutische en biomedische laboratoriumtechnologie (BLT)"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2022-2023"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Wies Rybel"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "Die Rietjie / Chevalier de la table Ronde"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "BOOOOOO!!!"
+      },
+      {
+        "q": "favoriete drank",
+        "a": "Duvel"
+      },
+      {
+        "q": "Zwakte",
+        "a": "Cava"
+      }
+    ]
+  },
+  {
+    "fName": "Goten",
+    "lName": "Anné",
+    "function": "Sport & Cultuur",
+    "imageUrl": "/assets/images/praesidium/goten.jpg",
+    "url": "sport-en-cultuur",
+    "questions": [
+      {
+        "q": "Studie",
+        "a": "Biomedische laboratoriumtechnologiën"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2022-2023"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Maajk & Brum"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "Were di"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Perfection is not attainable, but if we chase perfection we catch excellence."
+      }
+    ]
+  },
+  {
+    "fName": "Lisanne",
+    "lName": "Moens",
+    "nName": "Nightfall",
+    "function": "P.R.",
+    "imageUrl": "/assets/images/praesidium/lisanne.jpg",
+    "url": "pr",
+    "questions": [
+      {
+        "q": "Studie",
+        "a": "Biomedische laboratoriumtechnologiën (Forensisch onderzoek)"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2023-2024"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Bulkie & Kleinen"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "The Wild Rover"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Think like a proton, always positive."
       }
     ]
   },
@@ -159,91 +346,16 @@
       {
         "q": "Favoriete drank",
         "a": "Pintjeuh"
+      },
+      {
+        "q": "Favoriete programmeertaal",
+        "a": "TypeScript"
       }
     ],
     "funFacts": [
       "Fun fact 1",
       "Fun fact 2",
       "Fun fact 3"
-    ]
-  },
-  {
-    "fName": "Kiran",
-    "lName": "Trifin",
-    "nName": "BrAkKe JoNgEn",
-    "function": "Doopmeester",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
-    "url": "doopmeester",
-    "questions": [
-      {
-        "q": "",
-        "a": ""
-      }
-    ]
-  },
-  {
-    "fName": "Kylian",
-    "lName": "Lenoir",
-    "nName": "Peblu",
-    "function": "Schachtentemmer",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
-    "url": "schachtentemmer",
-    "questions": [
-      {
-        "q": "",
-        "a": ""
-      }
-    ]
-  },
-  {
-    "fName": "Leana",
-    "lName": "Sasi Andrade",
-    "function": "Zedenmeesteres",
-    "imageUrl": "/assets/images/praesidium/leana.jpeg",
-    "url": "zedenmeester-2",
-    "questions": [
-      {
-        "q": "Studie",
-        "a": "Bachelor Farmaceutische en biomedische laboratorium technologie (BLT)"
-      },
-      {
-        "q": "Doopjaar",
-        "a": "2022-2023"
-      },
-      {
-        "q": "Meter(s)/Peter(s)",
-        "a": "Wies Rybel"
-      },
-      {
-        "q": "Favoriete cantuslied",
-        "a": "Die Rietjie / Chevalier de la table Ronde"
-      },
-      {
-        "q": "Favoriete quote",
-        "a": "BOOOOOO!!!"
-      },
-      {
-        "q": "favoriete drank",
-        "a": "Duvel"
-      },
-      {
-        "q": "Zwakte",
-        "a": "Cava"
-      }
-    ]
-  },
-  {
-    "fName": "Lisanne",
-    "lName": "Moens",
-    "nName": "Nightfall",
-    "function": "P.R.",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
-    "url": "pr",
-    "questions": [
-      {
-        "q": "",
-        "a": ""
-      }
     ]
   }
 ]

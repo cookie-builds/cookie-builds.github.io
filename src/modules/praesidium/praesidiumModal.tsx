@@ -12,7 +12,6 @@ const ModalDiv = styled.div<{$open: number}>`
   position: fixed;
   top: 0;
   right: ${p => p.$open ? '-100%' : '0'};
-  height: 100vh;
   width: 100%;
   max-width: 25rem;
   background-color: var(--white);
@@ -27,6 +26,7 @@ const InsideDiv = styled.div`
   flex-direction: column;
   padding: 1rem;
   gap: 1rem;
+  max-height: 100vh;
 `;
 const Text = styled.h2`
   font-weight: 300;
@@ -36,6 +36,15 @@ const Img = styled.img`
 `;
 const H3 = styled.h3`
   font-weight: 600;
+`;
+
+const ImgText = styled.div`
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px gray solid;
 `;
 
 const PraesidiumModal = () => {
@@ -56,21 +65,23 @@ const PraesidiumModal = () => {
             <Title color='--green' text={member.function || ''} />
             <Text>{member.fName} {member.nName && <i>"{member.nName}"</i>} {member.lName}</Text>
           </div>
-          <Img src={member.imageUrl} />
-          {member.questions.map((v) => (
-            <div key={v.q}>
-              <H3>{v.q}</H3>
-              <p>{v.a}</p>
-            </div>
-          ))}
-          {(member.funFacts && member.funFacts.length > 0) && (
-            <div>
-              <H3>Fun facts:</H3>
-              <div>
-                {member.funFacts.map((v) => <p>- {v}</p>)}
+          <ImgText>
+            <Img src={member.imageUrl} />
+            {member.questions.map((v) => (
+              <div key={v.q}>
+                <H3>{v.q}</H3>
+                <p>{v.a}</p>
               </div>
-            </div>
-          )}
+            ))}
+            {(member.funFacts && member.funFacts.length > 0) && (
+              <div>
+                <H3>Fun facts:</H3>
+                <div>
+                  {member.funFacts.map((v) => <p>- {v}</p>)}
+                </div>
+              </div>
+            )}
+          </ImgText>
         </InsideDiv>
       )}
     </ModalDiv>
