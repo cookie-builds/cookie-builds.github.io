@@ -35,7 +35,7 @@ const SInnerDiv = styled(InnerDiv)`
 
 const SLink = styled(Link)`
   padding: 0;
-  height: 80px;
+  height: 100px;
   ${transition}
 `;
 
@@ -53,10 +53,10 @@ const NavMenu = () => {
   }, [openNav]);
   return (
     <>
-      <SHeader $isHome={+(pathname === '/')}>
+      <SHeader $isHome={+(pathname === '/' || pathname === '/test-home')}>
         <SInnerDiv>
           <SLink to='/'>
-            <Schild colored={pathname !== '/' || openNav} color={openNav ? '#217226': 'var(--white)'} height={80} />
+            <Schild colored={pathname !== '/' || openNav} color={openNav ? '#217226': 'var(--white)'} height={100} />
           </SLink>
           <DesktopNav />
           <MobileNav openNav={openNav} setOpenNav={setOpenNav} />
