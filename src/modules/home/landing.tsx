@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import LandingPic from '/assets/images/landing-pic.jpg';
 import { mediaQuery } from '../../assets/styling';
-import { Link } from 'react-router-dom';
 
 const slideIn = keyframes`
   0% {
@@ -23,7 +22,7 @@ const Div = styled.div<{$img: string}>`
   background-position: center;
 `;
 
-const Span = styled(Link)`
+const Span = styled.div`
   position: absolute;
   color: var(--white);
   font-size: 2.5rem;
@@ -49,7 +48,7 @@ const Landing = () => {
 
   return (
     <Div $img={LandingPic}>
-      <Span to="/">Studentenclub Mercurius</Span>
+      <Span>Studentenclub Mercurius</Span>
     </Div>
   )
 }
