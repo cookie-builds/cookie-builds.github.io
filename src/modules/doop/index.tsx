@@ -1,8 +1,22 @@
+import styled from "styled-components";
 import Banner from "../../components/banner";
 import Helmet from "../../components/helmet"
 import { InnerDiv, OuterSec } from "../../components/standard";
 import Title from "../../components/title";
 import BannerImg from '/assets/images/landing-pic.jpg';
+import { boxShadow } from "../../assets/styling";
+import { Carousel } from "react-responsive-carousel";
+
+const P = styled.p`
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+  ${boxShadow}
+`;
+
+const SInnerDiv = styled(InnerDiv)`
+  padding-top: 0;
+`;
 
 const Doop = () => {
   return (
@@ -12,13 +26,23 @@ const Doop = () => {
         <Banner imgUrl={BannerImg} />
         <OuterSec>
           <InnerDiv>
-            <Title color="--green" text="Doop" />
+            <Title color='--white' text='LAN-party' />
+            <P>
+              Hier moet dan uiteindelijk, zoals op de LAN pagina een tekstje komen met uitleg hoe onze doop ineen zit.
+            </P>
           </InnerDiv>
         </OuterSec>
-        <OuterSec $color='--light-green'>
-          <InnerDiv $even={1}>
-            <Title color="--green" text="Doop" />
-          </InnerDiv>
+        <OuterSec>
+          <SInnerDiv>
+            <Title color="--green" text="Sfeerbeelden" />
+            <Carousel width='100%'>
+              {[1, 2, 3, 4, 5].map(v => (
+                <div>
+                  <img src={`assets/images/lan/${v}.jpg`} />
+                </div>
+              ))}
+            </Carousel>
+          </SInnerDiv>
         </OuterSec>
       </div>
     </>

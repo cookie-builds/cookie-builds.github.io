@@ -33,7 +33,7 @@ const Span = styled.div`
   text-align: center;
   user-select: none;
   opacity: 0;
-  animation: ${slideIn} 2s ease-out 0.5s forwards;
+  animation: ${slideIn} 1s ease-out 0.5s forwards;
 
   ${mediaQuery.extraSmall`
     font-size: 3rem;

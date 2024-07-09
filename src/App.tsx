@@ -14,10 +14,6 @@ function App() {
           element: <Elements.Home />
         },
         {
-          path: 'test-home',
-          element: <Elements.Home />
-        },
-        {
           path: 'lan',
           element: <Elements.Lan />
         },

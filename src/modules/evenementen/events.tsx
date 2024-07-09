@@ -23,7 +23,7 @@ const P = styled.p<{$color: string}>`
 const Events = (props: { events: EventType[], noEventsColor: string }) => {
 
   if (props.events.length === 0) return (
-    <P $color={props.noEventsColor}>Geen evenementen met deze filters.</P>
+    <P $color={props.noEventsColor}>Geen evenementen te vinden.</P>
   )
 
   return (

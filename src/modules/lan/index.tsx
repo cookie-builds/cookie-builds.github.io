@@ -5,6 +5,10 @@ import Helmet from "../../components/helmet";
 import BannerImg from '/assets/images/landing-pic.jpg';
 import { InnerDiv, OuterSec } from "../../components/standard";
 import Title from "../../components/title";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './carousel.css';
+import Partners from "./partners";
 
 const P = styled.p`
   width: 100%;
@@ -27,26 +31,26 @@ const Lan = () => {
           <InnerDiv>
             <Title color='--white' text='LAN-party' />
             <P>
-              Tekst met uitleg over de LAN-party.
+              Ook dit jaar gaat onze befaamde LAN-party weer door op HOGENT campus Aalst.
+              Zoals altijd kan je meedoen met één van onze leuke competities. Dit jaar staan Valorant, League of Legends, Super Smash Bros, Just Dance, Rocket League en uiteraard Beer Pong op het programma.
+              Inschrijven hiervoor kan onderaan deze pagina.
+              Ook worden er enkele fun compos georganiseerd, namelijk Beerio Kart, Trackmania...
             </P>
           </InnerDiv>
         </OuterSec>
         <OuterSec $color='--white'>
           <SInnerDiv>
             <Title color='--green' text='Sfeerbeelden' />
-            <div>
-              Fotos van vorige edities van de LAN
-            </div>
+            <Carousel width='100%'>
+              {[1, 2, 3, 4, 5].map(v => (
+                <div>
+                  <img src={`assets/images/lan/${v}.jpg`} />
+                </div>
+              ))}
+            </Carousel>
           </SInnerDiv>
         </OuterSec>
-        <OuterSec $color='--light-green'>
-          <InnerDiv $even={1}>
-            <Title color='--green' text='Sponsors' />
-            <div>
-              Fotos met sponsors van de LAN
-            </div>
-          </InnerDiv>
-        </OuterSec>
+        <Partners />
       </div>
     </>
   )

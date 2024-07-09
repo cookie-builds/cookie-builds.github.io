@@ -68,7 +68,7 @@ const Partners = () => {
         <Title color="--green" text="Partners" />
         <PartnerScroll>
           <PartnersDiv>
-            {[0, 1, 3, 4].map(_i => partners.map(v => (
+            {[0, 1, 3, 4].map(() => partners.map(v => (
               <Partner to={v.to}>
                 <Img src={v.imgSrc} />
               </Partner>

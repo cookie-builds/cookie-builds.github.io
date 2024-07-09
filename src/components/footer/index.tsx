@@ -27,7 +27,8 @@ const Top = styled.div`
   top: -1.5rem;
   right: 0;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
