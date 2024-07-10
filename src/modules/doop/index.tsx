@@ -26,7 +26,7 @@ const Doop = () => {
         <Banner imgUrl={BannerImg} />
         <OuterSec>
           <InnerDiv>
-            <Title color='--white' text='LAN-party' />
+            <Title color='--white' text='Doop' />
             <P>
               Hier moet dan uiteindelijk, zoals op de LAN pagina een tekstje komen met uitleg hoe onze doop ineen zit.
             </P>
@@ -38,7 +38,7 @@ const Doop = () => {
             <Carousel width='100%'>
               {[1, 2, 3, 4, 5].map(v => (
                 <div>
-                  <img src={`assets/images/lan/${v}.jpg`} />
+                  <img src={`assets/images/doop/${v}.jpg`} />
                 </div>
               ))}
             </Carousel>
