@@ -6,6 +6,7 @@ import Title from "../../components/title";
 import BannerImg from '/assets/images/landing-pic.jpg';
 import { boxShadow } from "../../assets/styling";
 import { Carousel } from "react-responsive-carousel";
+import './carousel.css';
 
 const P = styled.p`
   width: 100%;
