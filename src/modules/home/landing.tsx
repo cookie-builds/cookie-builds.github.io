@@ -4,13 +4,15 @@ import { mediaQuery } from '../../assets/styling';
 
 const slideIn = keyframes`
   0% {
-    bottom: 9rem;
+    bottom: 8.5rem;
     opacity: 0;
+    scale: 0.95;
   }
 
   100% {
     bottom: 8rem;
     opacity: 1;
+    scale: 1;
   }
 `;
 
@@ -26,21 +28,30 @@ const Span = styled.div`
   position: absolute;
   color: var(--white);
   font-size: 2.5rem;
+  line-height: 2.5rem;
   font-weight: 600;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   bottom: 8rem;
-  width: 100%;
+  width: min-content;
+  left: calc(50% - 10rem);
   text-align: center;
   user-select: none;
   opacity: 0;
-  animation: ${slideIn} 1s ease-out 0.5s forwards;
-
+  animation: ${slideIn} 1.5s ease-out 0.5s forwards;
+  scale: 0.95;
+  padding: 0 1rem;
+  
   ${mediaQuery.extraSmall`
-    font-size: 3rem;
+    width: 100%;
+    left: unset;
+    padding: 0 2rem;
+    line-height: 4rem;
+    font-size: 4rem;
   `}
 
   ${mediaQuery.medium`
-    font-size: 5rem;
+    line-height: 6rem;
+    font-size: 6rem;
   `}
 `;
 

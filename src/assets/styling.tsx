@@ -2,7 +2,7 @@
 import { css } from 'styled-components';
 
 export const screenSize = {
-  extraSmall: '30rem',
+  extraSmall: '33rem',
   small: '48rem',
   medium: '64rem',
   large: '90rem',
@@ -11,7 +11,7 @@ export const screenSize = {
 
 export const mediaQuery = {
   extraSmall: (...args: any) => css`
-    @media only screen and (min-width: ${screenSize.small}) {
+    @media only screen and (min-width: ${screenSize.extraSmall}) {
       ${css(args)}
     }
   `,
