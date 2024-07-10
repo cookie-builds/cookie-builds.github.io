@@ -1,13 +1,31 @@
 import styled from "styled-components";
 import SocialMedia from "../socialMedia"
 import { InnerDiv, OuterSec } from "../standard"
-import { IoIosArrowUp } from "react-icons/io";
-import { transition } from "../../assets/styling";
+import { TbArrowBigUpLineFilled } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Schild from "../schild";
 
 const SOuterSec = styled(OuterSec)`
   background-color: var(--green);
+`;
+
+const SIoIosArrowUp = styled(TbArrowBigUpLineFilled)`
+  font-size: 1.75rem;
+`;
+const TopBtn = styled.button`
+  background-color: var(--green);
+  color: var(--light-green);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100rem;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  &:hover {
+    transform: translateY(-0.25rem);
+  }
 `;
 
 const SInnerDiv = styled(InnerDiv)`
@@ -21,21 +39,17 @@ const SInnerDiv = styled(InnerDiv)`
 
 const Top = styled.div`
   position: absolute;
-  background-color: var(--white);
-  color: var(--green);
-  border: 1px solid var(--green);
-  top: -1.5rem;
+  top: calc(-5rem);
   right: 0;
-  padding: 0.5rem 1rem;
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 0;
   font-weight: 500;
+  gap: 0.25rem;
 
-  ${transition}
+  cursor: default;
 `;
 
 const Links = styled.div`
@@ -53,14 +67,21 @@ const SLink = styled(Link)`
   left: 0;
 `;
 
+const Span = styled.span`
+  color: var(--green);
+`;
+
 const Footer = () => (
   <SOuterSec>
     <SInnerDiv>
       <SLink to='/'>
         <Schild colored height={120} />
       </SLink>
-      <Top onClick={() => window.scrollTo(0,0)}>
-        Naar boven <IoIosArrowUp style={{ marginLeft: '0.5rem'}} />
+      <Top>
+        <TopBtn onClick={() => window.scrollTo(0,0)}>
+          <SIoIosArrowUp />
+        </TopBtn>
+        <Span>Naar boven</Span>
       </Top>
       <SocialMedia />
       <Links>
