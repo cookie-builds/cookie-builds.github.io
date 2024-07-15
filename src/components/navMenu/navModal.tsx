@@ -49,7 +49,7 @@ const NavModal = (props: {open: boolean, setOpenNav: React.Dispatch<React.SetSta
   return (
     <NavModalDiv open={+props.open}>
       <InnerNavDiv>
-        <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))}>LAN</SLink>
+        {/* <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))}>LAN</SLink> */}
         <SLink title='Praesidium' to='/praesidium' $active={+(pathname.includes('/praesidium'))}>Praesidium</SLink>
         <SLink title='Geschiedenis' to='/geschiedenis' $active={+(pathname.includes('/geschiedenis'))}>Geschiedenis</SLink>
         <SLink title='Clublied' to='/clublied' $active={+(pathname.includes('/clublied'))}>Clublied</SLink>

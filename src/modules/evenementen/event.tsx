@@ -3,6 +3,7 @@ import { EventType } from '../../context/models'
 import { Link } from 'react-router-dom';
 import { BsImages } from 'react-icons/bs';
 import { boxShadow, transition } from '../../assets/styling';
+import { ImImage } from 'react-icons/im';
 
 const EventDiv = styled(Link)`
   display: flex;
@@ -40,6 +41,7 @@ const MTitle = styled.h3`
 const MText = styled.p`
   font-size: 1rem;
   font-weight: 300;
+  flex: 1 1 0;
 `;
 const SBsImages = styled(BsImages)`
   position: absolute;
@@ -52,6 +54,10 @@ const SBsImages = styled(BsImages)`
   color: var(--green);
   cursor: pointer;
 `;
+const BottomDesc = styled.div`
+  display: flex;
+  width: 100%;
+`;
 
 const Event = (props: EventType) => {
   return (
@@ -62,7 +68,10 @@ const Event = (props: EventType) => {
       </ImgDiv>
       <TextDiv>
         <MTitle>{props.title}</MTitle>
-        <MText>{props.when}</MText>
+        <BottomDesc>
+          <MText>{props.when}</MText>
+          {props.picturesUrl && <ImImage color='var(--green)' size='1.5rem' />}
+        </BottomDesc>
       </TextDiv>
     </EventDiv>
   )

@@ -86,7 +86,7 @@ const Footer = () => (
       <SocialMedia />
       <Links>
         <Link to=''>Home</Link>
-        <Link to='/lan'>LAN</Link>
+        {/* <Link to='/lan'>LAN</Link> */}
         <Link to='/praesidium'>Praesidium</Link>
         <Link to='/geschiedenis'>Geschiedenis</Link>
         <Link to='/clublied'>Clublied</Link>

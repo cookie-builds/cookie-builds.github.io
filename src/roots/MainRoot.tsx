@@ -1,7 +1,7 @@
 import React from 'react'
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, /*useLocation*/ } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import Doop from '../components/doop';
+// import Doop from '../components/doop';
 import NavMenu from '../components/navMenu';
 import { useContent } from '../context/contentContext';
 import Footer from '../components/footer';
@@ -17,7 +17,7 @@ const LoaderDiv = styled.div`
   flex: 1 1 0;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
+  background-color: #111111;
 `;
 
 const l14 = keyframes`
@@ -27,7 +27,7 @@ const Loader = styled.div`
   width: 120px;
   height: 22px;
   border-radius: 40px;
-  color: var(--green);
+  color: var(--white);
   border: 2px solid;
   position: relative;
   overflow: hidden;
@@ -55,7 +55,7 @@ const OutletDiv = styled.div`
 const MainRoot = () => {
   const content = useContent();
   const [imagesLoaded, setImagesLoaded] = React.useState(false);
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
   const cssVariables = {
     '--black': '#000000',
     '--white': '#FFFFFF',
@@ -95,7 +95,7 @@ const MainRoot = () => {
 
   return (
     <Site style={cssVariables}>
-      <Doop $show={!pathname.includes('doop')} />
+      {/* <Doop $show={!pathname.includes('doop')} /> */}
       <NavMenu />
       <OutletDiv>
         <Outlet/>

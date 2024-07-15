@@ -52,7 +52,7 @@ const DesktopNav = () => {
 
   return (
     <LinkDiv>
-      <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))} $isHome={+isHome}>LAN</SLink>
+      {/* <SLink title='LAN' to='/lan' $active={+(pathname.includes('/lan'))} $isHome={+isHome}>LAN</SLink> */}
       <SLink title='Praesidium' to='/praesidium' $active={+(pathname.includes('/praesidium'))} $isHome={+isHome}>Praesidium</SLink>
       <SLink title='Geschiedenis' to='/geschiedenis' $active={+(pathname.includes('/geschiedenis'))} $isHome={+isHome}>Geschiedenis</SLink>
       <SLink title='Clublied' to='/clublied' $active={+(pathname.includes('/clublied'))} $isHome={+isHome}>Clublied</SLink>
