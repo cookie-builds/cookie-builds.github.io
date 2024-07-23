@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import SocialMedia from "../socialMedia"
 import { InnerDiv, OuterSec } from "../standard"
-import { TbArrowBigUpLineFilled } from "react-icons/tb";
+// import { TbArrowBigUpLineFilled } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Schild from "../schild";
 
@@ -9,24 +9,24 @@ const SOuterSec = styled(OuterSec)`
   background-color: var(--green);
 `;
 
-const SIoIosArrowUp = styled(TbArrowBigUpLineFilled)`
-  font-size: 1.75rem;
-`;
-const TopBtn = styled.button`
-  background-color: var(--green);
-  color: var(--light-green);
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100rem;
-  cursor: pointer;
-  transition: 0.2s all ease;
-  &:hover {
-    transform: translateY(-0.25rem);
-  }
-`;
+// const SIoIosArrowUp = styled(TbArrowBigUpLineFilled)`
+//   font-size: 1.75rem;
+// `;
+// const TopBtn = styled.button`
+//   background-color: var(--green);
+//   color: var(--light-green);
+//   width: 3rem;
+//   height: 3rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 100rem;
+//   cursor: pointer;
+//   transition: 0.2s all ease;
+//   &:hover {
+//     transform: translateY(-0.25rem);
+//   }
+// `;
 
 const SInnerDiv = styled(InnerDiv)`
   display: flex;
@@ -37,20 +37,20 @@ const SInnerDiv = styled(InnerDiv)`
   padding: 7.5rem 0 2.5rem 0;
 `;
 
-const Top = styled.div`
-  position: absolute;
-  top: calc(-5rem);
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  font-weight: 500;
-  gap: 0.25rem;
+// const Top = styled.div`
+//   position: absolute;
+//   top: calc(-5rem);
+//   right: 0;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 0;
+//   font-weight: 500;
+//   gap: 0.25rem;
 
-  cursor: default;
-`;
+//   cursor: default;
+// `;
 
 const Links = styled.div`
   display: flex;
@@ -67,9 +67,15 @@ const SLink = styled(Link)`
   left: 0;
 `;
 
-const Span = styled.span`
-  color: var(--green);
-`;
+// const Span = styled.span`
+//   color: var(--green);
+// `;
+{/* <Top>
+  <TopBtn onClick={() => window.scrollTo(0,0)}>
+    <SIoIosArrowUp />
+  </TopBtn>
+  <Span>Naar boven</Span>
+</Top> */}
 
 const Footer = () => (
   <SOuterSec>
@@ -77,12 +83,6 @@ const Footer = () => (
       <SLink to='/'>
         <Schild colored height={120} />
       </SLink>
-      <Top>
-        <TopBtn onClick={() => window.scrollTo(0,0)}>
-          <SIoIosArrowUp />
-        </TopBtn>
-        <Span>Naar boven</Span>
-      </Top>
       <SocialMedia />
       <Links>
         <Link to=''>Home</Link>

@@ -81,7 +81,7 @@
       },
       {
         "q": "Favoriete quote",
-        "a": "Vieze Vuilerik"
+        "a": "Gij Vieze Vuilerik"
       },
       {
         "q": "Favoriete drank",
@@ -145,7 +145,7 @@
       },
       {
         "q": "Meter(s)/Peter(s)",
-        "a": "Duivenmelker & Luna"
+        "a": "Luna & Duivenmelker"
       },
       {
         "q": "Favoriete cantuslied",
@@ -215,11 +215,27 @@
     "nName": "Gazon",
     "function": "Zedenmeester",
     "url": "zedenmeester-1",
-    "imageUrl": "https://mercurius-aalst.be/img/praesidium/jonathan.jpg",
+    "imageUrl": "/assets/images/praesidium/jason.jpg",
     "questions": [
       {
-        "q": "",
-        "a": ""
+        "q": "Studie",
+        "a": "Accountancy administration"
+      },
+      {
+        "q": "Doopjaar",
+        "a": "2023-2024"
+      },
+      {
+        "q": "Meter(s)/Peter(s)",
+        "a": "Maajk & Bulkie"
+      },
+      {
+        "q": "Favoriete cantuslied",
+        "a": "De Blauwvoet"
+      },
+      {
+        "q": "Favoriete quote",
+        "a": "Gij Vieze Vuilerik"
       }
     ]
   },

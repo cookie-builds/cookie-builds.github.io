@@ -29,12 +29,12 @@ const TextDiv = styled.div`
   flex: 1 1 0;
   padding: 1rem;
   gap: 1rem;
-  justify-content: space-between;
   align-items: flex-end;
 `;
 const Text = styled.p`
   width: 100%;
   font-weight: 300;
+  flex: 1 1 0;
 `;
 const Btn = styled(Link)`
   background-color: var(--green);
@@ -44,6 +44,10 @@ const Btn = styled(Link)`
   font-weight: 500;
   ${transition}
 `;
+const EventTitle = styled.h2`
+  font-weight: 600;
+  width: 100%;
+`
 
 const NextEvent = () => {
   const { nextEvent } = useContent();
@@ -58,6 +62,7 @@ const NextEvent = () => {
             <Img src={nextEvent.imageUrl} />
           </ImgDiv>
           <TextDiv>
+            <EventTitle>{nextEvent.title}</EventTitle>
             <Text>
               {nextEvent.what}
             </Text>
