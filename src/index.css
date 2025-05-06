@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 43% 96%;
+    --foreground: 31 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 31 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 31 30% 20%;
+
+    --primary: 31 75% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 31 56% 92%;
+    --secondary-foreground: 31 30% 20%;
+
+    --muted: 31 36% 92%;
+    --muted-foreground: 31 10% 40%;
+
+    --accent: 31 56% 92%;
+    --accent-foreground: 31 30% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 31 30% 86%;
+    --input: 31 30% 86%;
+    --ring: 31 75% 46%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cd781d' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+
+  .photo-frame {
+    @apply bg-white p-2 shadow-md rotate-1 hover:rotate-0 transition-all duration-300;
+  }
+
+  .moment-card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-oker/20 hover:shadow-lg transition-all duration-300;
+  }
+  
+  .polaroid {
+    @apply bg-white p-3 pb-8 shadow-lg transform transition-all duration-300 relative;
+  }
+  
+  .polaroid:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+
+  .heart-icon {
+    @apply text-oker fill-oker animate-float;
+  }
+}
