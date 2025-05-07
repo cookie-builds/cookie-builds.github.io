@@ -5,10 +5,10 @@ const HeaderComp = () => {
     <>
       <header className="pt-8 text-center relative">
         <div className="absolute inset-0 flex justify-around opacity-10">
-          <Heart size={200} className="text-oker fill-oker/20 animate-float" />
-          <Heart size={120} className="text-oker fill-oker/20 animate-float" style={{animationDelay: "0.5s"}} />
+          <Heart size={200} className="text-oker fill-oker/20 animate-float relative top-4" />
+          <Heart size={120} className="text-oker fill-oker/20 animate-float relative -top-4" style={{animationDelay: "0.5s"}} />
           <Heart size={150} className="text-oker fill-oker/20 animate-float" style={{animationDelay: "1s"}} />
-          <Heart size={200} className="text-oker fill-oker/20 animate-float" style={{animationDelay: "1.5s"}} />
+          <Heart size={200} className="text-oker fill-oker/20 animate-float relative top-8" style={{animationDelay: "1.5s"}} />
         </div>
         
         <div className="container relative z-10">
