@@ -12,17 +12,14 @@ const HeaderComp = () => {
         </div>
         
         <div className="container relative z-10">
-          <div className="inline-block bg-oker text-white px-4 py-1 rounded-full text-sm mb-3">Our Love Story</div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-oker mb-2">For My Beloved</h1>
-          <p className="text-xl md:text-2xl text-softbrown max-w-2xl mx-auto">
-            A collection of our most cherished memories and moments together
-          </p>
+          <div className="inline-block bg-oker text-white px-4 py-1 rounded-full text-sm mb-3">Ons verhaal</div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-oker mb-2">Voor mijn Springduif</h1>
         </div>
       </header>
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-lg md:text-xl text-softbrown">
-          I've created this space to celebrate our love and the beautiful journey we're on together.
-          Explore our photos, special moments, and the many reasons why my heart belongs to you.
+          Ik heb nog eens een pagina gemaakt om onze mooiste momenten samen te delen.<br />
+          Als je eens een mindere dag hebt, kan je hier altijd even komen kijken dat je weet dat ik altijd van je hou.
         </p>
       </div>
     </>
